@@ -18,21 +18,21 @@ const About = () => {
     { id: 8, title: "Server Security" },
   ];
   return (
-    <div className=" bg-gradient-to-r from-[#232A44] to-[#1A2037] h-[650px]">
-      <div className="w-[70%] mx-auto grid grid-cols-2 items-center h-full">
+    <div className=" bg-gradient-to-r from-[#232A44] to-[#1A2037] h-[650px]" id="about">
+      <div className="md:w-[70%] w-[90%] mx-auto grid md:grid-cols-2 items-center h-full">
         {/* Image */}
-        <div className="grid grid-cols-2 gap-3 items-end">
+        <div className="grid grid-cols-2 gap-3 items-end ">
           <Image src={img1} alt="about-section-img1" />
           <Image src={img2} alt="Who we are" />
-          <Image src={img3} alt="Who we are" />
+          <Image src={img3} alt="Who we are" className="" />
         </div>
         {/* Text */}
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 md:text-left text-center">
           <h2 className="text-secondary">ABOUT US</h2>
-          <h1 className="text-[60px] text-darkWhite font-bold leading-[56px]">
+          <h1 className="md:text-[60px] text-[26px] text-darkWhite font-bold md:leading-[70px] leading-[32px]">
             Everything starts with identity
           </h1>
-          <p className="text-darkWhite text-[20px]">
+          <p className="text-darkWhite md:text-[20px] text-[18px] leading-[26px]">
             At New Creation we start at the grassroot to build our solutions for
             identity.
           </p>
@@ -40,7 +40,7 @@ const About = () => {
             {lists.map((list) => (
               <div className="flex gap-2 text-lg items-center">
                 <BsFillArrowRightCircleFill className="text-orange" />
-                <h2 className="text-darkWhite">{list.title}</h2>
+                <h2 className="text-darkWhite md:text-[18px] text-[15px]">{list.title}</h2>
               </div>
             ))}
           </div>

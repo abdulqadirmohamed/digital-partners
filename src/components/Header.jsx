@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+
 import { useState } from "react";
 import logo from '../img/whiz-cyber-logo.png'
 
@@ -13,15 +14,17 @@ const Header = () => {
 
   const navLinks = [
     { id: 1, url: "#home", title: "Home" },
-    { id: 2, url: "#about-us", title: "About" },
+    { id: 2, url: "#about", title: "About" },
     { id: 3, url: "#services", title: "Services" },
     { id: 4, url: "#partners", title: "Partners" },
     { id: 5, url: "#contact", title: "Contact" },
   ];
+  
   return (
     <nav className="px-4 py-6 transition-all duration-900 ease-in">
-      <div className="w-[70%] mx-auto flex items-center justify-between flex-wrap">
-        <Link href="/" className="flex items-center flex-shrink-0 text-white mr-6">
+      <div className="md:w-[70%] w-[90%] mx-auto flex items-center justify-between flex-wrap">
+        <Link href="/"
+          className="flex items-center flex-shrink-0 text-white mr-6">
           {/* <span className="font-semibold text-xl tracking-tight"></span> */}
           <Image src={logo} alt="Digital Partners logo" />
         </Link>
@@ -41,9 +44,8 @@ const Header = () => {
           </button>
         </div>
         <div
-          className={`${
-            isMenuOpen ? "block" : "hidden"
-          } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
+          className={`${isMenuOpen ? "block" : "hidden"
+            } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
         >
           <div className="text-right text-lg lg:flex-grow">
             {navLinks.map((nav) => (

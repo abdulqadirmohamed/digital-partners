@@ -5,13 +5,13 @@ import whizCyberBanner from "../img/whiz-cyber-banner.png";
 const Hero = () => {
   return (
     <div className="h-[650px]">
-      <div className="grid grid-cols-2 items-center mt-24 w-[70%] mx-auto ">
+      <div className="grid md:grid-cols-2 order-last items-center mt-24 md:w-[70%] w-[90%] mx-auto ">
         <div>
           {/* social media icon */}
-          <div>social media icon</div>
+          <div className="hidden md:block">social media icon</div>
           {/* Text */}
           <div className="col-span-1">
-            <h1 className="text-darkWhite text-[70px] font-bold leading-[70px]">
+            <h1 className="text-darkWhite md:text-[70px] text-[37px] font-bold md:leading-[70px] leading-[40px] md:text-left text-center">
               Everything starts{" "}
               <span className="text-orange">With identity</span> For Your
               Security
