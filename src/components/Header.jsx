@@ -20,10 +20,10 @@ const Header = () => {
   ];
   return (
     <nav className="px-4 py-6 transition-all duration-900 ease-in">
-      <div className=" flex items-center justify-between flex-wrap">
+      <div className="w-[70%] mx-auto flex items-center justify-between flex-wrap">
         <Link href="/" className="flex items-center flex-shrink-0 text-white mr-6">
           {/* <span className="font-semibold text-xl tracking-tight"></span> */}
-          <Image src={logo} />
+          <Image src={logo} alt="Digital Partners logo" />
         </Link>
         <div className="block lg:hidden">
           <button
