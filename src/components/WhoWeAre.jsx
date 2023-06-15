@@ -5,14 +5,14 @@ import img from '../img/who-we-are-img.png'
 
 const WhoWeAre = () => {
   return (
-    <div className="grid grid-cols-2 items-center">
+    <div className="grid grid-cols-2 items-center gap-6">
       {/* Text */}
-      <div>
+      <div className="flex flex-col gap-6">
         <h2 className="text-secondary">WHO WE ARE</h2>
-        <h1 className="text-[60px] text-darkWhite font-bold leading-tight">
+        <h1 className="text-[60px] text-darkWhite font-bold leading-[56px]">
           New Creation is a leading provider of digital identity solutions.
         </h1>
-        <p className="text-darkWhite">
+        <p className="text-darkWhite text-[20px]">
           Our vision is to build technology for people to trust each other in a
           digital world. We bring trust to identity in every step of the
           customer journey from onboarding to off boarding. With us, safety and

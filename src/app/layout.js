@@ -1,8 +1,12 @@
 import Header from '@/components/Header'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Titillium_Web } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] }) 
+const inter = Titillium_Web({ 
+  weight: ['200','300','400', '600','700', '900'],
+  subsets: ['latin'] 
+}) 
 
 export const metadata = {
   title: 'Digital Partners',

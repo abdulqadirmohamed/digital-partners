@@ -10,7 +10,7 @@ const Hero = () => {
         <div>social media icon</div>
         {/* Text */}
         <div className="col-span-1">
-          <h1 className="text-darkWhite text-[65px] font-bold leading-tight">Everything starts <span className="text-orange">With identity</span>  For Your Security</h1>
+          <h1 className="text-darkWhite text-[70px] font-bold leading-[70px]">Everything starts <span className="text-orange">With identity</span>  For Your Security</h1>
         </div>
       </div>
       {/* Image */}
