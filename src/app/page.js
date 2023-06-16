@@ -1,7 +1,9 @@
 import About from "@/components/About";
+import Footer from "@/components/Footer";
 import Guidelines from "@/components/Guidelines";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Partners from "@/components/Partners";
 import Services from "@/components/Services";
 import WhatWeDo from "@/components/WhatWeDo";
 import WhoWeAre from "@/components/WhoWeAre";
@@ -19,7 +21,9 @@ export default function Home() {
         {/* <Guidelines/> */}
         <WhatWeDo/>
         <Services/>
+        <Partners/>
         <WorldMap/>
+        <Footer/>
       </div>
     </main>
   );

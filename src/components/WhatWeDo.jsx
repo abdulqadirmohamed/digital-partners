@@ -10,7 +10,7 @@ import Link from "next/link";
 const WhatWeDo = () => {
 
   return (
-    <div className=" bg-gradient-to-r from-[#232A44] to-[#1A2037] md:h-[650px] md:h-[750px]">
+    <div className="bg-gradient-to-r from-[#232A44] to-[#1A2037] md:h-[650px] md:h-[750px] py-10">
       <div className="md:w-[70%] w-[90%] mx-auto grid md:grid-cols-2 items-center h-full">
         {/* Image */}
         <div className="grid grid-cols">
@@ -22,7 +22,7 @@ const WhatWeDo = () => {
           <h1 className="md:text-[60px] text-[26px] text-darkWhite font-bold md:leading-[70px] leading-[32px]">
             The Perfect Solution For all
           </h1>
-          <div className="grid grid-cols-3">
+          <div className="grid md:grid-cols-3 justify-center">
             <Image src={img2} alt="about-section-img1" />
             <Image src={img3} alt="about-section-img1" />
             <Image src={img4} alt="about-section-img1" />

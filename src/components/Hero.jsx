@@ -13,7 +13,7 @@ const Hero = () => {
           <div className="col-span-1">
             <h1 className="text-darkWhite md:text-[70px] text-[37px] font-bold md:leading-[70px] leading-[40px] md:text-left text-center">
               Everything starts{" "}
-              <span className="text-orange">With identity</span> For Your
+              <span className="animate-text bg-gradient-to-r from-[#D88730] to-[#1A2037] via-[#9336B4] bg-clip-text text-transparent font-black">With identity</span> For Your
               Security
             </h1>
           </div>

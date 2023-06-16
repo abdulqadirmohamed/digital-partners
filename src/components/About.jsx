@@ -18,7 +18,7 @@ const About = () => {
     { id: 8, title: "Server Security" },
   ];
   return (
-    <div className=" bg-gradient-to-r from-[#232A44] to-[#1A2037] md:h-[650px] md:h-[900px]"  id="about">
+    <div className=" bg-gradient-to-r from-[#232A44] to-[#1A2037] md:h-[650px] md:h-[900px] py-10"  id="about">
       <div className="md:w-[70%] w-[90%] mx-auto grid md:grid-cols-2 items-center h-full">
         {/* Image */}
         <div className="grid grid-cols-2 gap-3 items-end ">
@@ -27,7 +27,7 @@ const About = () => {
           <Image src={img3} alt="Who we are" className="" />
         </div>
         {/* Text */}
-        <div className="flex flex-col gap-2 md:text-left text-center">
+        <div className="flex flex-col gap-2 md:text-left text-center py-10">
           <h2 className="text-secondary">ABOUT US</h2>
           <h1 className="md:text-[60px] text-[26px] text-darkWhite font-bold md:leading-[70px] leading-[32px]">
             Everything starts with identity

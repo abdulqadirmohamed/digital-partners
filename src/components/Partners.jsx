@@ -1,63 +1,65 @@
+'use client'
+import React from 'react'
 import Image from 'next/image';
-import React, { useState } from 'react';
-import { PartnerSlider } from './PartnerSlider';
-import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from "swiper";
 
-const Slider = ({ slides }) => {
-  const [current, setCurrent] = useState(0);
-  const length = slides.length;
 
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
-  };
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
-  };
+import 'swiper/css';
+import img1 from "../img/partners/partners-icon1.png";
+import img2 from "../img/partners/partners-icon2.png";
+import img3 from "../img/partners/partners-icon3.png";
+import img4 from "../img/partners/partners-icon4.png";
+import img5 from "../img/partners/partners-icon5.png";
+import img6 from "../img/partners/partners-icon6.png";
+import img7 from "../img/partners/partners-icon7.png";
+import img8 from "../img/partners/partners-icon8.png";
 
-  if (!Array.isArray(slides) || slides.length <= 0) {
-    return null;
-  }
+const Partners = () => {
+  const logos = [
+    { id: 1, logo: img1 },
+    { id: 2, logo: img2 },
+    { id: 3, logo: img3 },
+    { id: 4, logo: img4 },
+    { id: 5, logo: img5 },
+    { id: 6, logo: img6 },
+    { id: 7, logo: img7 },
+    { id: 8, logo: img8 },
+  ]
 
   return (
-    <div id='gallery' className='max-w-[1240px] mx-auto'>
-      <h1 className='text-2xl font-bold text-center p-4'>Gallery</h1>
-      <div className='relative flex justify-center p-4'>
+    <div className="md:h-[550px] md:h-[750px] py-10">
+      <div className="md:w-[70%] w-[90%] mx-auto items-center h-full">
+        <div className="text-center">
+          <h2 className="text-secondary">OUR SERVICES</h2>
+          <h1 className="text-[60px] text-darkWhite font-bold leading-[56px]">
+            Digital Identity
+          </h1>
+        </div>
+        <Swiper
+        className='mt-16'
+          spaceBetween={50}
+          slidesPerView={5}
+          Autoplay={{
+            delay: 1000,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+          onSlideChange={() => console.log('slide change')}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+          {logos.map((logoImg) => (
+            <SwiperSlide>
+              <div className='bg-[#1D233C] p-5 flex items-center justify-center'>
+                <Image src={logoImg.logo} />
 
-      {PartnerSlider.map((slide, index) => {
-        return (
-          <div
-            key={index}
-            className={
-              index === current
-                ? 'opacity-[1] ease-in duration-1000'
-                : 'opacity-0'
-            }
-          >
-              <FaArrowCircleLeft
-                onClick={prevSlide}
-                className='absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2]'
-                size={50}
-              />
-              {index === current && (
-                <Image
-                  src={slide.image}
-                  alt='/'
-                  width='1440'
-                  height='600'
-                  objectFit='cover'
-                />
-              )}
-              <FaArrowCircleRight
-                onClick={nextSlide}
-                className='absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2]'
-                size={50}
-              />
-            </div>
-        );
-    })}
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
-    </div>
-  );
-};
+  )
+}
 
-export default Slider;
+export default Partners

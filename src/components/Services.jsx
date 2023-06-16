@@ -17,10 +17,10 @@ const Services = () => {
     { id: 4, logo: img6, title: "Mobility, Travel & Hospitality" },
   ];
   return (
-    <div className="bg-primary" id="services">
+    <div className="bg-primary py-10" id="services">
       <div className="md:w-[70%] w-[90%] mx-auto flex flex-col justify-center items-center h-full">
         <div className="text-center">
-          <h2 className="text-secondary">WE FOLLOW THESE</h2>
+          <h2 className="text-secondary">OUR SERVICES</h2>
           <h1 className="text-[60px] text-darkWhite font-bold leading-[56px]">
             Digital Identity
           </h1>
