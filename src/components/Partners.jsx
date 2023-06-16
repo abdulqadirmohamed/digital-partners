@@ -49,8 +49,8 @@ const Partners = () => {
           onSwiper={(swiper) => console.log(swiper)}
         >
           {logos.map((logoImg) => (
-            <SwiperSlide>
-              <div key={logoImg.id} className='bg-[#1D233C] p-5 flex items-center justify-center hover:bg-[#1A2037] cursor-pointer'>
+            <SwiperSlide key={logoImg.id}>
+              <div className='bg-[#1D233C] p-5 flex items-center justify-center hover:bg-[#1A2037] cursor-pointer'>
                 <Image src={logoImg.logo} />
 
               </div>
