@@ -13,8 +13,8 @@ const Guidelines = () => {
     { id: 4, logo: img4 },
   ];
   return (
-    <div className="bg-primary h-[650px]">
-      <div className="w-[70%] mx-auto flex flex-col justify-center items-center md:h-full">
+    <div className="bg-primary md:h-[650px] h-screen">
+      <div className="md:w-[70%] w-[90%] mx-auto mx-auto flex flex-col justify-center items-center md:h-full h-screen">
         <div className="text-center">
           <h2 className="text-secondary">WE FOLLOW THESE</h2>
           <h1 className="text-[60px] text-darkWhite font-bold leading-[56px]">

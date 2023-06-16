@@ -5,7 +5,7 @@ import img from '../img/who-we-are-img.png'
 
 const WhoWeAre = () => {
   return (
-    <div className="bg-gradient-to-r to-[#232A44] from-[#1A2037] h-[650px]">
+    <div className="bg-gradient-to-r to-[#232A44] from-[#1A2037] md:h-[650px] h-screen">
       <div className="md:w-[70%] w-[90%] mx-auto grid md:grid-cols-2 items-center gap-6">
         {/* Text */}
         <div className="flex flex-col gap-6 md:text-left text-center">

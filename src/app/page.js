@@ -16,7 +16,7 @@ export default function Home() {
         <Hero/>
         <WhoWeAre/>
         <About/>
-        <Guidelines/>
+        {/* <Guidelines/> */}
         <WhatWeDo/>
         <Services/>
         <WorldMap/>

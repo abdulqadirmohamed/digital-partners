@@ -18,7 +18,7 @@ const About = () => {
     { id: 8, title: "Server Security" },
   ];
   return (
-    <div className=" bg-gradient-to-r from-[#232A44] to-[#1A2037] h-[650px]" id="about">
+    <div className=" bg-gradient-to-r from-[#232A44] to-[#1A2037] md:h-[650px] md:h-[900px]"  id="about">
       <div className="md:w-[70%] w-[90%] mx-auto grid md:grid-cols-2 items-center h-full">
         {/* Image */}
         <div className="grid grid-cols-2 gap-3 items-end ">

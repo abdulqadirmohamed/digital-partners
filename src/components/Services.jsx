@@ -18,7 +18,7 @@ const Services = () => {
   ];
   return (
     <div className="bg-primary" id="services">
-      <div className="w-[70%] mx-auto flex flex-col justify-center items-center h-full">
+      <div className="md:w-[70%] w-[90%] mx-auto flex flex-col justify-center items-center h-full">
         <div className="text-center">
           <h2 className="text-secondary">WE FOLLOW THESE</h2>
           <h1 className="text-[60px] text-darkWhite font-bold leading-[56px]">
@@ -31,7 +31,7 @@ const Services = () => {
             and proactive provider for identifications and signatures.
           </p> */}
         </div>
-        <div className="grid grid-cols-3 gap-6 mt-16 my-8">
+        <div className="grid md:grid-cols-3 gap-6 mt-16 my-8">
           {pricePlans.map((plan) => (
             <div
               key={plan.id}
