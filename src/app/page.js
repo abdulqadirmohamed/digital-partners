@@ -12,8 +12,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="bg-primary w-full h-full">
-      <div className="">
+    <main className="bg-primary w-full h-full ">
+      <div className="" id="home">
         <Header />
         <Hero/>
         <WhoWeAre/>

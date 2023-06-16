@@ -28,7 +28,7 @@ const Partners = () => {
   ]
 
   return (
-    <div className="md:h-[550px] md:h-[750px] py-10">
+    <div className="md:h-[550px] md:h-[750px] py-10" id='partners'>
       <div className="md:w-[70%] w-[90%] mx-auto items-center h-full">
         <div className="text-center">
           <h2 className="text-secondary">OUR SERVICES</h2>
@@ -50,7 +50,7 @@ const Partners = () => {
         >
           {logos.map((logoImg) => (
             <SwiperSlide>
-              <div className='bg-[#1D233C] p-5 flex items-center justify-center'>
+              <div className='bg-[#1D233C] p-5 flex items-center justify-center hover:bg-[#1A2037] cursor-pointer'>
                 <Image src={logoImg.logo} />
 
               </div>

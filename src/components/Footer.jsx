@@ -15,7 +15,7 @@ const Footer = () => {
         { id: 4, url: "#contact", title: "Contact" },
     ];
     return (
-        <div className=''>
+        <div className='' id='contact'>
             <div className='md:w-[70%] w-[90%] mx-auto h-full mt-5 py-10'>
                 <div className='flex md:justify-between justify-center gap-4'>
                     <div className='flex flex-col justify-center gap-4'>

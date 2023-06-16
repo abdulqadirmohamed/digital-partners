@@ -10,7 +10,7 @@ import Link from "next/link";
 const WhatWeDo = () => {
 
   return (
-    <div className="bg-gradient-to-r from-[#232A44] to-[#1A2037] md:h-[650px] md:h-[750px] py-10">
+    <div className="bg-gradient-to-r from-[#232A44] to-[#1A2037] md:h-[650px] md:h-[750px] py-10 ">
       <div className="md:w-[70%] w-[90%] mx-auto grid md:grid-cols-2 items-center h-full">
         {/* Image */}
         <div className="grid grid-cols">

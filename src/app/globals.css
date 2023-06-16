@@ -8,3 +8,8 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

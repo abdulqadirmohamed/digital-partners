@@ -21,7 +21,7 @@ const Header = () => {
   ];
   
   return (
-    <nav className="px-4 py-6 transition-all duration-900 ease-in">
+    <nav className="px-4 py-6 transition-all duration-900 ease-in scroll-smooth">
       <div className="md:w-[70%] w-[90%] mx-auto flex items-center justify-between flex-wrap">
         <Link href="/"
           className="flex items-center flex-shrink-0 text-white mr-6">
@@ -53,6 +53,7 @@ const Header = () => {
                 key={nav.id}
                 href={nav.url}
                 className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-secondary mr-4"
+                scroll={false}
               >
                 {nav.title}
               </Link>
