@@ -38,7 +38,7 @@ const About = () => {
           </p>
           <div className="grid grid-cols-2">
             {lists.map((list) => (
-              <div className="flex gap-2 text-lg items-center">
+              <div className="flex gap-2 text-lg items-center" key={list.id}>
                 <BsFillArrowRightCircleFill className="text-orange" />
                 <h2 className="text-darkWhite md:text-[18px] text-[15px]">{list.title}</h2>
               </div>
