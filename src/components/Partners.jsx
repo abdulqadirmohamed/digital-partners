@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 
+
 import 'swiper/css';
 import img1 from "../img/partners/partners-icon1.png";
 import img2 from "../img/partners/partners-icon2.png";
@@ -28,30 +29,34 @@ const Partners = () => {
   ]
 
   return (
-    <div className="md:h-[550px] md:h-[750px] py-10" id='partners'>
+    <div className="md:h-[550px] py-10" id='partners'>
       <div className="md:w-[70%] w-[90%] mx-auto items-center h-full">
         <div className="text-center">
-          <h2 className="text-secondary">OUR SERVICES</h2>
+          <h2 className="text-secondary">PARTNERS</h2>
           <h1 className="text-[60px] text-darkWhite font-bold leading-[56px]">
-            Digital Identity
+          We're Working With
           </h1>
         </div>
         <Swiper
         className='mt-16'
           spaceBetween={50}
           slidesPerView={5}
-          Autoplay={{
-            delay: 1000,
+          loop={true}
+        
+          autoplay={{
+            delay: 2000,
             disableOnInteraction: false,
           }}
-          loop={true}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
         >
           {logos.map((logoImg) => (
             <SwiperSlide key={logoImg.id}>
-              <div className='bg-[#1D233C] p-5 flex items-center justify-center hover:bg-[#1A2037] cursor-pointer'>
-                <Image src={logoImg.logo} />
+              <div className=' bg-[#1D233C] p-5 flex items-center justify-center hover:bg-[#1A2037] cursor-pointer'>
+                <Image src={logoImg.logo} alt='Digital Partners logo'/>
 
               </div>
             </SwiperSlide>

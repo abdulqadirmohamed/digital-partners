@@ -23,8 +23,8 @@ const About = () => {
         {/* Image */}
         <div className="grid grid-cols-2 gap-3 items-end ">
           <Image src={img1} alt="about-section-img1" />
-          <Image src={img2} alt="Who we are" />
-          <Image src={img3} alt="Who we are" className="" />
+          <Image src={img2} alt="about-section-img2" />
+          <Image src={img3} alt="about-section-img3"/>
         </div>
         {/* Text */}
         <div className="flex flex-col gap-2 md:text-left text-center py-10">

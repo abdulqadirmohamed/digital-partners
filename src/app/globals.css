@@ -13,3 +13,15 @@
     scroll-behavior: smooth;
   }
 }
+
+/* @media screen and (min-width: 576px) {
+  .swiper-container {
+    width: 576px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    width: 768px;
+  }
+} */

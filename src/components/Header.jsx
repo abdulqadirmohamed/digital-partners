@@ -13,18 +13,17 @@ const Header = () => {
   };
 
   const navLinks = [
-    { id: 1, url: "#home", title: "Home" },
-    { id: 2, url: "#about", title: "About" },
-    { id: 3, url: "#services", title: "Services" },
-    { id: 4, url: "#partners", title: "Partners" },
-    { id: 5, url: "#contact", title: "Contact" },
+    { id: 1, url: "#home", title: "Home", active:true},
+    { id: 2, url: "#about", title: "About", active:false },
+    { id: 3, url: "#services", title: "Services", active:false },
+    { id: 4, url: "#partners", title: "Partners", active:false },
   ];
-  
+
   return (
     <nav className="px-4 py-6 transition-all duration-900 ease-in scroll-smooth">
       <div className="md:w-[70%] w-[90%] mx-auto flex items-center justify-between flex-wrap">
         <Link href="/"
-          className="flex items-center flex-shrink-0 text-white mr-6">
+          className={`flex items-center flex-shrink-0 text-white mr-6`}>
           {/* <span className="font-semibold text-xl tracking-tight"></span> */}
           <Image src={logo} alt="Digital Partners logo" />
         </Link>
@@ -52,14 +51,21 @@ const Header = () => {
               <Link
                 key={nav.id}
                 href={nav.url}
-                className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-secondary mr-4"
+                className={`block mt-4 lg:inline-block lg:mt-0 text-[20px] hover:text-secondary mr-4 ${nav.active ? 'text-secondary':'text-[#A5B6D2]'}`}
                 scroll={false}
               >
                 {nav.title}
               </Link>
             ))}
           </div>
-          {/* <div className="text-left">Social Media</div> */}
+          <div className="md:text-left text-right">
+            <Link
+              href="#contact"
+              className="md:hover:bg-secondary md:bg-orange text-darkWhite md:px-10 py-3 mr-4 rounded-lg md:text-2xl text-[20px] "
+            >
+              Contact
+            </Link>
+          </div>
         </div>
       </div>
     </nav>
