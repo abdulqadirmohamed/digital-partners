@@ -19,7 +19,7 @@ const Footer = () => {
   ];
 
   const handleScroll = (e) => {
-    // first prevent the default behavior
+
     e.preventDefault();
     // get the href and remove everything before the hash (#)
     const href = e.currentTarget.href;
