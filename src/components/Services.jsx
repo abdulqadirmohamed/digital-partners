@@ -1,4 +1,10 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
+
 import Image from "next/image";
 import img1 from "../img/services-img2.png";
 import img2 from "../img/services-img3.png";
@@ -13,25 +19,53 @@ const Services = () => {
     { id: 2, logo: img2, title: "Finance" },
     { id: 3, logo: img3, title: "E-Government" },
     { id: 4, logo: img4, title: "HR & Interim" },
-    { id: 4, logo: img5, title: "Media & Entertainment" },
-    { id: 4, logo: img6, title: "Mobility, Travel & Hospitality" },
+    { id: 5, logo: img5, title: "Media & Entertainment" },
+    { id: 6, logo: img6, title: "Mobility, Travel & Hospitality" },
   ];
+
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        x: 0,
+        transition: {
+          type: "spring",
+          duration: 3,
+          bounce: 0.1,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        x: "-20vw",
+      });
+    }
+  }, [inView]);
+
   return (
     <div className="bg-primary py-10" id="services">
-      <div className="md:w-[70%] w-[90%] mx-auto flex flex-col justify-center items-center h-full">
+      <div
+        ref={ref}
+        className="md:w-[70%] w-[90%] mx-auto flex flex-col justify-center items-center h-full"
+      >
         <div className="text-center">
           <h2 className="text-secondary">OUR SERVICES</h2>
-          <h1 className="text-[60px] text-darkWhite font-bold leading-[56px]">
+          <h1 className="md:text-[60px] text-[26px] text-darkWhite font-bold leading-[56px]">
             Digital Identity
           </h1>
-          {/* <p>
+          <p className="md:text-[18px] text-[16px] text-darkWhite leading-[24px] my-4">
             If you use MobileID, you can feel confident with our handling of
             your identity. And companies, authorities and organisations can
             calmly develop their services knowing that they have chosen a safe
             and proactive provider for identifications and signatures.
-          </p> */}
+          </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-6 mt-16 my-8">
+        <motion.div
+          animate={animation}
+          className="grid md:grid-cols-3 gap-6 mt-16 my-8"
+        >
           {pricePlans.map((plan) => (
             <div
               key={plan.id}
@@ -41,7 +75,7 @@ const Services = () => {
               <h1 className="text-[24px] text-darkWhite">{plan.title}</h1>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

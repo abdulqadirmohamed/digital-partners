@@ -19,6 +19,19 @@ const Header = () => {
     { id: 4, url: "#partners", title: "Partners", active:false },
   ];
 
+  const handleScroll = (e) => {
+    // first prevent the default behavior
+    e.preventDefault();
+    // get the href and remove everything before the hash (#)
+    const href = e.currentTarget.href;
+    const targetId = href.replace(/.*\#/, "");
+    // get the element by id and use scrollIntoView
+    const elem = document.getElementById(targetId);
+    elem?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
     <nav className="px-4 py-6 transition-all duration-900 ease-in scroll-smooth">
       <div className="md:w-[70%] w-[90%] mx-auto flex items-center justify-between flex-wrap">
@@ -52,7 +65,7 @@ const Header = () => {
                 key={nav.id}
                 href={nav.url}
                 className={`block mt-4 lg:inline-block lg:mt-0 text-[20px] hover:text-secondary mr-4 ${nav.active ? 'text-secondary':'text-[#A5B6D2]'}`}
-                scroll={false}
+                onClick={handleScroll}
               >
                 {nav.title}
               </Link>
@@ -60,6 +73,7 @@ const Header = () => {
           </div>
           <div className="md:text-left text-right">
             <Link
+            onClick={handleScroll}
               href="#contact"
               className="md:hover:bg-secondary md:bg-orange text-darkWhite md:px-10 py-3 mr-4 rounded-lg md:text-2xl text-[20px] "
             >
