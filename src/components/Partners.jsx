@@ -33,6 +33,7 @@ const Partners = () => {
 
   const { ref, inView } = useInView();
   const animation = useAnimation();
+  
 
   useEffect(() => {
     if (inView) {
