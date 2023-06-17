@@ -42,7 +42,7 @@ const Services = () => {
         x: "-20vw",
       });
     }
-  }, [inView]);
+  });
 
   return (
     <div className="bg-primary py-10" id="services">

@@ -28,7 +28,7 @@ const WhoWeAre = () => {
         x: "-20vw",
       });
     }
-  }, [inView]);
+  });
 
   return (
     <div className="bg-gradient-to-r to-[#232A44] from-[#1A2037] md:h-[650px] h-screen py-10">

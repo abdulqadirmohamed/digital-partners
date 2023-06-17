@@ -29,7 +29,7 @@ const Hero = () => {
       })
     }
 
-  },[inView])
+  })
   return (
     <motion.div className="h-[650px] relative" >
       <div ref={ref} className="grid md:grid-cols-2 order-last items-center mt-24 md:w-[70%] w-[90%] mx-auto">

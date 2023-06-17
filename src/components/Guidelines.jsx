@@ -38,7 +38,7 @@ const Guidelines = () => {
         x: "-20vw",
       });
     }
-  }, [inView]);
+  });
 
   return (
     // <div className="bg-primary md:h-[650px] h-screen">

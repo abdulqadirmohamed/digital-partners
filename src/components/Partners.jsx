@@ -51,7 +51,7 @@ const Partners = () => {
         x: "-20vw",
       });
     }
-  }, [inView]);
+  });
 
   return (
     <div className="md:h-[550px] py-10" id="partners">

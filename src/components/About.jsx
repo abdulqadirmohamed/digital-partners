@@ -30,7 +30,7 @@ const About = () => {
         y: "-10vw",
       });
     }
-  }, [inView]);
+  });
 
   const lists = [
     { id: 1, title: "Mobile Money" },
