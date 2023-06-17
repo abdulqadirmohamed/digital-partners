@@ -56,7 +56,7 @@ const About = () => {
   };
   return (
     <div
-      className=" bg-gradient-to-r from-[#232A44] to-[#1A2037] md:h-[650px] md:h-[900px] py-10"
+      className=" bg-gradient-to-r from-[#232A44] to-[#1A2037]  md:h-[900px] h-screen py-10"
       id="about"
     >
       <div
@@ -75,17 +75,16 @@ const About = () => {
         {/* Text */}
         <motion.div
           animate={animation}
-          className="flex flex-col gap-2 md:text-left text-center py-10"
-        >
+          className="flex flex-col gap-2 md:text-left text-center py-10">
           <h2 className="text-secondary">ABOUT US</h2>
           <h1 className="md:text-[60px] text-[26px] text-darkWhite font-bold md:leading-[70px] leading-[32px]">
             Everything starts with identity
           </h1>
           <p className="text-darkWhite md:text-[20px] text-[18px] leading-[26px]">
-            At New Creation we start at the grassroot to build our solutions for
+            At Digital Partners we start at the grassroot to build our solutions for
             identity.
           </p>
-          <div className="grid grid-cols-2">
+          <div className="grid md:grid-cols-2 my-4">
             {lists.map((list) => (
               <div className="flex gap-2 text-lg items-center" key={list.id}>
                 <BsFillArrowRightCircleFill className="text-orange" />
