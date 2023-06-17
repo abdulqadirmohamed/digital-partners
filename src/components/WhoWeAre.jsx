@@ -1,12 +1,40 @@
+'use client'
 import Image from "next/image";
-import React from "react";
+import React,{ useEffect } from "react";
+
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
+
 import img from '../img/who-we-are-img.png'
 
 
 const WhoWeAre = () => {
+
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        x: 40,
+        transition: {
+          type: "spring",
+          duration: 3,
+          bounce: 0.1,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        x: "-20vw",
+      });
+    }
+  }, [inView]);
+
   return (
     <div className="bg-gradient-to-r to-[#232A44] from-[#1A2037] md:h-[650px] h-screen py-10">
-      <div className="md:w-[70%] w-[90%] mx-auto grid md:grid-cols-2 items-center gap-6">
+      <div ref={ref} className="md:w-[70%] w-[90%] mx-auto grid md:grid-cols-2 items-center gap-6">
         {/* Text */}
         <div className="flex flex-col gap-6 md:text-left text-center">
           <h2 className="text-secondary">WHO WE ARE</h2>
@@ -23,9 +51,9 @@ const WhoWeAre = () => {
           </p>
         </div>
         {/* Image */}
-        <div>
+        <motion.div animate={animation}>
           <Image src={img} alt="Who we are"/>
-        </div>
+        </motion.div>
       </div>
     </div>
     );

@@ -69,7 +69,7 @@ const Services = () => {
           {pricePlans.map((plan) => (
             <div
               key={plan.id}
-              className="bg-[#1D233C] hover:border-[1px] border-[1px] border-[#1D233C] hover:border-secondary rounded-md p-16 flex flex-col items-center cursor-pointer transition-all duration-200 ease-in-out"
+              className="bg-[#1D233C] hover:border-[1px] border-[1px] border-[#1D233C] hover:border-secondary rounded-md p-16 flex flex-col items-center cursor-pointer transition-all duration-300 ease"
             >
               <Image src={plan.logo} alt="pricing plan icon" />
               <h1 className="text-[24px] text-darkWhite">{plan.title}</h1>

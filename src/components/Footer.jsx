@@ -1,7 +1,9 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import logo from "../img/whiz-cyber-logo.png";
+// import logo from "../img/whiz-cyber-logo.png";
+import logo from "../img/digital-partners-logo.png";
+
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";

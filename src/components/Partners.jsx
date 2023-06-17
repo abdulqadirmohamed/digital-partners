@@ -85,18 +85,16 @@ const Partners = () => {
               slidesPerView:2,
             },
             576: {
-              // width: 576,
               slidesPerView: 3,
             },
             768: {
-              // width: 768,
               slidesPerView: 5,
             },
           }}
         >
           {logos.map((logoImg) => (
             <SwiperSlide key={logoImg.id}>
-              <div className=" bg-[#1D233C] p-5 flex items-center justify-center hover:bg-[#1A2037] cursor-pointer">
+              <div className=" bg-[#1D233C] p-5 flex items-center justify-center hover:bg-secondary rounded-md cursor-pointer transition-all duration-300 ease">
                 <Image src={logoImg.logo} alt="Digital Partners logo" />
               </div>
             </SwiperSlide>
