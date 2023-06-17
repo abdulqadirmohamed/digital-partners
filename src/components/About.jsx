@@ -80,7 +80,7 @@ const About = () => {
           <h1 className="md:text-[60px] text-[26px] text-darkWhite font-bold md:leading-[70px] leading-[32px]">
             Everything starts with identity
           </h1>
-          <p className="text-darkWhite md:text-[20px] text-[18px] leading-[26px]">
+          <p className="text-darkWhite text-[18px] md:text-[20px]  leading-[26px]">
             At Digital Partners we start at the grassroot to build our solutions for
             identity.
           </p>
