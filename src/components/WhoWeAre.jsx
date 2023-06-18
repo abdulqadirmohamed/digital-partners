@@ -31,7 +31,7 @@ const WhoWeAre = () => {
   });
 
   return (
-    <div className="bg-gradient-to-r to-[#232A44] from-[#1A2037] md:h-[650px] h-screen py-10">
+    <div className="bg-gradient-to-r to-[#232A44] from-[#1A2037] md:h-[650px] h-full py-10">
       <div
         ref={ref}
         className="md:w-[70%] w-[90%] mx-auto grid md:grid-cols-2 items-center gap-6"

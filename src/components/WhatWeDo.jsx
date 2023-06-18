@@ -7,7 +7,7 @@ import img4 from "../img/whatwedo/money_me.png";
 
 const WhatWeDo = () => {
   return (
-    <div className="bg-gradient-to-r from-[#232A44] to-[#1A2037] h-screen md:h-[750px] py-10 ">
+    <div className="bg-gradient-to-r from-[#232A44] to-[#1A2037] h-full md:h-[750px] py-10 ">
       <div className="md:w-[70%] w-[90%] mx-auto grid md:grid-cols-4 items-center h-full">
         <div className="col-span-1">
           <Image src={img1} alt="about-section-img1" />

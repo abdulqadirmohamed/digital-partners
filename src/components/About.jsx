@@ -56,7 +56,7 @@ const About = () => {
   };
   return (
     <div
-      className=" bg-gradient-to-r from-[#232A44] to-[#1A2037]  md:h-[900px] h-screen py-10"
+      className=" bg-gradient-to-r from-[#232A44] to-[#1A2037]  md:h-[900px] h-full py-10"
       id="about"
     >
       <div
