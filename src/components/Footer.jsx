@@ -94,17 +94,17 @@ const Footer = () => {
                 <span className="text-orange group-hover:text-secondary">
                   <MdEmail />
                 </span>
-                <p className="text-[#A5B6D2] hover:underline group-hover:text-secondary">
+                <Link href="mailto:sales@digitalpartner.tech" className="text-[#A5B6D2] hover:underline group-hover:text-secondary">
                   sales@digitalpartner.tech
-                </p>
+                </Link>
               </div>
               <div className="flex gap-2 items-center cursor-pointer group">
                 <span className="text-orange group-hover:text-secondary">
                   <MdEmail />
                 </span>
-                <p className="text-[#A5B6D2] hover:underline group-hover:text-secondary">
+                <Link href="mailto:info@digitalpartner.tech" className="text-[#A5B6D2] hover:underline group-hover:text-secondary">
                   info@digitalpartner.tech
-                </p>
+                </Link>
               </div>
             </div>
           </div>
