@@ -32,15 +32,16 @@ const Hero = () => {
 
   const heroStyle = {
     backgroundImage:
-      'url("https://img.freepik.com/free-photo/artistic-blurry-colorful-wallpaper-background_58702-8298.jpg?w=1380&t=st=1687588753~exp=1687589353~hmac=5af3c8656950fc9e43db88468f654ff94c40ec912cbeab32adff8f0c5b946bc3")',
+      'https://www.flickr.com/photos/197122939@N08/52997327757/in/dateposted/',
     backgroundPosition: "center",
     backgroundSize: "cover",
+    // backgroundRepeat: 'no repeat',
     // filter: "blur(5px)",
     backdropfilter: "blur(50px)",
   };
   return (
     <motion.div
-      className="h-[650px] w-full mx-auto relative bg-gradient-to-l from-red-500 to-black"
+      className="h-[650px] w-full mx-auto relative bg-gradient-to-r from-[#1A2037] to-black"
       style={heroStyle}
     >
       <div

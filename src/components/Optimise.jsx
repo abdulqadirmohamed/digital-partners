@@ -36,8 +36,8 @@ const Optimise = () => {
         <h1 className="text-[50px] text-primary font-bold leading-[56px] md:w-[600px] w-full text-center my-5">Optimise your customer journey</h1>
         <div className="flex gap-4 flex-wrap mt-4">
           {datas.map((data) => (
-            <div className="flex flex-col justify-center items-center px-2 py-3 bg-blue-50 md:w-[500px] ">
-              <div className="bg-gradient-to-r to-primary from-secondary text-white p-6 w-[80px] h-[80px] rounded-full flex justify-center items-center">
+            <div key={data.id} className="flex flex-col justify-center items-center px-2 py-3 bg-blue-50 md:w-[500px] ">
+              <div className="bg-gradient-to-r to-primary from-secondary text-white p-4 w-[80px] h-[80px] rounded-full flex justify-center items-center">
                 {data.icon}
               </div>
               <div className="text-center mt-3 text-[22px] ">
