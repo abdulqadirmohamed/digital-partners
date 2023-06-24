@@ -5,7 +5,7 @@ const MobileID = () => {
  
   return (
     <div
-      className=" bg-gradient-to-r to-[#232A44] from-[#1A2037]  md:h-[450px] h-screen py-10"
+      className="md:h-[450px] h-screen py-10"
       id="about"
     >
       <div
@@ -24,7 +24,7 @@ const MobileID = () => {
           className="flex flex-col gap-10 md:text-left text-center py-10"
         >
           <h2 className="text-secondary md:text-[20px]">MOBILE ID</h2>
-          <p className="text-darkWhite text-[20px] md:text-[20px] font-light leading-[30px]">
+          <p className="text-black text-[20px] md:text-[20px] font-light leading-[30px]">
             MobileID is the physical ID card in a digital format - The digital
             identity for a digital world Once Identity is covered, we have
             created value addition with our products that are in the pipeline:

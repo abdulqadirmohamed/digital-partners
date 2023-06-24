@@ -56,7 +56,7 @@ const About = () => {
   };
   return (
     <div
-      className=" bg-gradient-to-r from-[#232A44] to-[#1A2037]  md:h-[900px] h-full py-10"
+      className="shadow-sm md:h-[900px] h-full py-10"
       id="about"
     >
       <div
@@ -77,18 +77,18 @@ const About = () => {
           animate={animation}
           className="flex flex-col gap-2 md:text-left text-center py-10">
           <h2 className="text-secondary">ABOUT US</h2>
-          <h1 className="md:text-[60px] text-[26px] text-darkWhite font-bold md:leading-[70px] leading-[32px]">
+          <h1 className="md:text-[60px] text-[26px] text-primary font-bold md:leading-[70px] leading-[32px]">
             Everything starts with identity
           </h1>
-          <p className="text-darkWhite text-[18px] md:text-[20px]  leading-[26px]">
+          <p className="text-lightBlack text-[18px] md:text-[20px]  leading-[26px]">
             At Digital Partners we start at the grassroot to build our solutions for
             identity.
           </p>
           <div className="grid md:grid-cols-2 my-4">
             {lists.map((list) => (
               <div className="flex gap-2 text-lg items-center" key={list.id}>
-                <BsFillArrowRightCircleFill className="text-orange" />
-                <h2 className="text-darkWhite md:text-[18px] text-[15px]">
+                <BsFillArrowRightCircleFill className="text-secondary" />
+                <h2 className="text-lightBlack md:text-[18px] text-[15px]">
                   {list.title}
                 </h2>
               </div>
@@ -98,7 +98,7 @@ const About = () => {
             <Link
               onClick={handleScroll}
               href="#contact"
-              className="text-left bg-secondary hover:bg-orange text-darkWhite px-12 py-3 rounded-md text-2xl"
+              className="bg-gradient-to-r to-primary from-secondary hover:bg-orange text-darkWhite px-12 py-3 rounded-md text-2xl"
             >
               Contact
             </Link>

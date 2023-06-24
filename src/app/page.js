@@ -4,8 +4,10 @@ import Footer from "@/components/Footer";
 import Guidelines from "@/components/Guidelines";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Mission from "@/components/Mission";
 import MobileID from "@/components/MobileID";
 import MoneyMe from "@/components/MoneyMe";
+import Optimise from "@/components/Optimise";
 import Partners from "@/components/Partners";
 import Services from "@/components/Services";
 import WhatWeDo from "@/components/WhatWeDo";
@@ -15,12 +17,14 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="bg-primary w-full h-full ">
+    <main className="bg-white w-full h-full">
       <div id="home">
         <Header />
         <Hero/>
+        <Optimise/>
         <WhoWeAre/>
         <About/>
+        <Mission/>
         <Guidelines/>
 
         <WhatWeDo/>
@@ -29,7 +33,7 @@ export default function Home() {
         <MoneyMe/>
 
         <Services/>
-        <Partners/>
+        {/* <Partners/> */}
         <WorldMap/>
         <Footer/>
       </div>

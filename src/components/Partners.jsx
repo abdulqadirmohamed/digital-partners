@@ -20,15 +20,22 @@ import img7 from "../img/partners/partners-icon7.png";
 import img8 from "../img/partners/partners-icon8.png";
 
 const Partners = () => {
-  const logos = [
-    { id: 1, logo: img1 },
-    { id: 2, logo: img2 },
-    { id: 3, logo: img3 },
-    { id: 4, logo: img4 },
-    { id: 5, logo: img5 },
-    { id: 6, logo: img6 },
-    { id: 7, logo: img7 },
-    { id: 8, logo: img8 },
+  // const logos = [
+  //   { id: 1, logo: img1 },
+  //   { id: 2, logo: img2 },
+  //   { id: 3, logo: img3 },
+  //   { id: 4, logo: img4 },
+  //   { id: 5, logo: img5 },
+  //   { id: 6, logo: img6 },
+  //   { id: 7, logo: img7 },
+  //   { id: 8, logo: img8 },
+  // ];
+  const dataPartners = [
+    { id: 1, logo: img1, desc:'Image one' },
+    { id: 2, logo: img1, desc:'Image two' },
+    { id: 3, logo: img1, desc:'Image three' },
+    { id: 4, logo: img1, desc:'Image four' },
+
   ];
 
   const { ref, inView } = useInView();
@@ -88,14 +95,16 @@ const Partners = () => {
               slidesPerView: 3,
             },
             768: {
-              slidesPerView: 5,
+              slidesPerView: 1,
             },
           }}
         >
-          {logos.map((logoImg) => (
+          {dataPartners.map((logoImg) => (
             <SwiperSlide key={logoImg.id}>
+
               <div className=" bg-[#1D233C] p-5 flex items-center justify-center hover:bg-secondary rounded-md cursor-pointer transition-all duration-300 ease">
                 <Image src={logoImg.logo} alt="Digital Partners logo" />
+                <h1>{logoImg.desc}</h1>
               </div>
             </SwiperSlide>
           ))}

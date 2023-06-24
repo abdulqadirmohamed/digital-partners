@@ -8,9 +8,17 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+.container {
+  width: 100%;
+  /* background-color: aquamarine; */
+  /* background-image: url('https://img.freepik.com/free-photo/3d-abstract-wave-pattern-background_53876-104422.jpg?w=1480&t=st=1687243302~exp=1687243902~hmac=940c3fd3c8dd8de1bdea5732eeb5059e28c3e48a6ec33bc322e5f7ed468ce87a'); */
+  background-position: center;
+  background-size: cover;
+}
 .scroll-container{
   scroll-behavior: smooth;
 }
+
 
 @layer base {
   html {

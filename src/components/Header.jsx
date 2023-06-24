@@ -16,7 +16,7 @@ const Header = () => {
     { id: 1, url: "#home", title: "Home", active:true},
     { id: 2, url: "#about", title: "About", active:false },
     { id: 3, url: "#services", title: "Services", active:false },
-    { id: 4, url: "#partners", title: "Partners", active:false },
+    { id: 4, url: "#contact", title: "Contact", active:false },
   ];
 
   const handleScroll = (e) => {
@@ -33,10 +33,10 @@ const Header = () => {
   };
 
   return (
-    <nav className="px-4 py-6 transition-all duration-900 ease-in scroll-smooth">
+    <nav className="bg-gradient-to-r via-[#5c10be] to-primary from-secondary px-4 py-4 transition-all duration-900 ease-in scroll-smooth">
       <div className="md:w-[70%] w-[90%] mx-auto flex items-center justify-between flex-wrap">
         <Link href="/"
-          className={`flex items-center flex-shrink-0 text-white mr-6`}>
+          className={`flex items-center flex-shrink-0  mr-6`}>
           <Image src={logo} alt="Digital Partners logo" />
         </Link>
         <div className="block lg:hidden">
@@ -63,22 +63,22 @@ const Header = () => {
               <Link
                 key={nav.id}
                 href={nav.url}
-                className={`block mt-4 lg:inline-block lg:mt-0 text-[20px] hover:text-secondary mr-4 ${nav.active ? 'text-secondary':'text-[#A5B6D2]'}`}
+                className={`block mt-4 lg:inline-block lg:mt-0 text-[20px] text-white mr-4`}
                 onClick={handleScroll}
               >
                 {nav.title}
               </Link>
             ))}
           </div>
-          <div className="md:text-left text-right">
+          {/* <div className="md:text-left text-right">
             <Link
             onClick={handleScroll}
               href="#contact"
-              className="md:hover:bg-secondary md:bg-orange text-darkWhite md:px-10 py-3 mr-4 rounded-lg md:text-2xl text-[20px] "
+              className="md:hover:bg-secondary md:bg-secondary text-white md:px-10 py-3 mr-4 rounded-lg md:text-2xl text-[20px] "
             >
               Contact
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

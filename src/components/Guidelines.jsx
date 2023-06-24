@@ -43,14 +43,14 @@ const Guidelines = () => {
   return (
     // <div className="bg-primary md:h-[650px] h-screen">
     //   <div className="md:w-[70%] w-[90%]  mx-auto flex flex-col justify-center items-center md:h-full h-screen">
-    <div className="bg-primary py-10" id="guidlines">
+    <div className="py-10" id="guidlines">
       <div
       ref={ref}
         className="md:w-[70%] w-[90%] mx-auto flex flex-col justify-center items-center h-full"
       >
         <div className="text-center">
           <h2 className="text-secondary">WE FOLLOW THESE</h2>
-          <h1 className="text-[60px] text-darkWhite font-bold leading-[56px]">
+          <h1 className="text-[60px] text-primary font-bold leading-[56px]">
             Guidelines
           </h1>
         </div>
@@ -60,7 +60,7 @@ const Guidelines = () => {
           {pricePlans.map((plan) => (
             <div
               key={plan.id}
-              className="bg-[#1D233C] hover:border-[1px] border-[1px] border-[#1D233C] hover:border-secondary rounded-md p-16 cursor-pointer transition-all duration-200 ease-in-out"
+              className="bg-gradient-to-r to-primary from-secondary hover:border-[1px] border-[1px] border-secondary hover:border-secondary rounded-md p-16 cursor-pointer transition-all duration-200 ease-in-out"
             >
               <Image src={plan.logo} alt="pricing plan icon" />
             </div>

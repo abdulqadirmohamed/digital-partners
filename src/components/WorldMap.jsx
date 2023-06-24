@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const WorldMap = () => {
     return (
-        <div className=" bg-gradient-to-r from-[#232A44] to-[#1A2037] md:h-[650px] h-[450px] py-10" id='#partners'>
+        <div className=" md:h-[650px] h-[450px] py-10" id='#partners'>
             <div className="md:w-[70%] w-[90%] mx-auto flex justify-center items-center h-full">
                 <Image  src={mapWorld} alt="map-website" />
             </div>
