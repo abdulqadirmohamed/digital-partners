@@ -2,8 +2,7 @@
 import React, { useEffect } from "react";
 
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useAnimation } from "framer-motion";
+
 
 import Image from "next/image";
 import img1 from "../img/services-img2.png";
@@ -24,31 +23,11 @@ const Services = () => {
     { id: 6, logo: img6, title: "Mobility, Travel & Hospitality" },
   ];
 
-  const { ref, inView } = useInView();
-  const animation = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        x: 0,
-        transition: {
-          type: "spring",
-          duration: 3,
-          bounce: 0.1,
-        },
-      });
-    }
-    if (!inView) {
-      animation.start({
-        x: "-20vw",
-      });
-    }
-  });
-
+ 
   return (
     <div className="py-10" id="services">
       <div
-        ref={ref}
+       
         className="md:w-[70%] w-[90%] mx-auto flex flex-col justify-center items-center h-full"
       >
         <div className="md:text-center">
@@ -64,7 +43,7 @@ const Services = () => {
           </p>
         </div>
         <motion.div
-          animate={animation}
+          
           className="grid md:grid-cols-3 gap-6 mt-16 my-8"
         >
           {pricePlans.map((plan) => (

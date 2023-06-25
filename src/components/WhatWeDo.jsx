@@ -7,7 +7,7 @@ import img4 from "../img/whatwedo/money_me.png";
 
 const WhatWeDo = () => {
   return (
-    <div className="h-full md:h-[750px] py-10 shadow-md">
+    <div className="h-full md:h-[750px] py-10">
       <div className="md:w-[70%] w-[90%] mx-auto grid md:grid-cols-4 items-center h-full">
         <div className="col-span-1">
           <Image src={img1} alt="about-section-img1" />
