@@ -51,12 +51,12 @@ const Services = () => {
         ref={ref}
         className="md:w-[70%] w-[90%] mx-auto flex flex-col justify-center items-center h-full"
       >
-        <div className="text-center">
+        <div className="md:text-center">
           <h2 className="text-secondary">OUR SERVICES</h2>
           <h1 className="md:text-[60px] text-[26px] text-primary font-bold leading-[56px]">
             Digital Identity
           </h1>
-          <p className="text-black text-[22px] md:text-[20px] font-medium leading-[30px] text-center">
+          <p className="text-black text-[22px] my-2 md:text-[20px] font-medium leading-[30px] md:text-center">
             If you use MobileID, you can feel confident with our handling of
             your identity. And companies, authorities and organisations can
             calmly develop their services knowing that they have chosen a safe

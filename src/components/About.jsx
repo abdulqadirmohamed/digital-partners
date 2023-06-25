@@ -6,31 +6,8 @@ import img2 from "../img/about-section-img2.png";
 import img3 from "../img/about-section-img3.png";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useAnimation } from "framer-motion";
 
 const About = () => {
-  const { ref, inView } = useInView();
-  const animation = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        y: 0,
-        transition: {
-          type: "spring",
-          duration: 3,
-          bounce: 0.5,
-        },
-      });
-    }
-    if (!inView) {
-      animation.start({
-        y: "-10vw",
-      });
-    }
-  });
 
   const lists = [
     { id: 1, title: "MobileID" },
@@ -58,21 +35,21 @@ const About = () => {
       id="about"
     >
       <div
-        ref={ref}
+
         className="md:w-[70%] w-[90%] mx-auto grid md:grid-cols-2 items-center h-full"
       >
         {/* Image */}
-        <motion.div
-          animate={animation}
-          className="grid grid-cols-2 gap-3 items-end mx-auto"
+        <div
+
+          className="grid grid-cols-2 gap-3 items-end "
         >
           <Image src={img1} alt="about-section-img1" />
           <Image src={img2} alt="about-section-img2" />
           <Image src={img3} alt="about-section-img3" />
-        </motion.div>
+        </div>
         {/* Text */}
-        <motion.div
-          animate={animation}
+        <div
+
           className="flex flex-col gap-2 md:text-left text-center py-10">
           <h2 className="text-secondary">ABOUT US</h2>
           <h1 className="md:text-[60px] text-[26px] text-primary font-bold md:leading-[70px] leading-[32px]">
@@ -101,7 +78,7 @@ const About = () => {
               Contact
             </Link>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

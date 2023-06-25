@@ -1,8 +1,6 @@
 'use client'
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useAnimation } from "framer-motion";
 
 import Image from "next/image";
 
@@ -19,31 +17,10 @@ const Guidelines = () => {
     { id: 4, logo: img4 },
   ];
 
-  const { ref, inView } = useInView();
-  const animation = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        x: 0,
-        transition: {
-          type: "spring",
-          duration: 3,
-          bounce: 0.1,
-        },
-      });
-    }
-    if (!inView) {
-      animation.start({
-        x: "-20vw",
-      });
-    }
-  });
-
+ 
   return (
     <div className="py-10" id="guidlines">
       <div
-      ref={ref}
         className="md:w-[70%] w-[90%] mx-auto flex flex-col justify-center items-center h-full"
       >
         <div className="text-center">
@@ -53,7 +30,6 @@ const Guidelines = () => {
           </h1>
         </div>
         <motion.div 
-        animate={animation}
         className="grid grid-cols-4 md:gap-6 gap-4 md:mt-16 mt-8">
           {pricePlans.map((plan) => (
             <div
