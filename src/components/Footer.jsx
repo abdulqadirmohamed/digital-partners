@@ -144,7 +144,7 @@ const Footer = () => {
       <div className="divide"></div>
       <div className="md:w-[70%] w-[90%] mx-auto h-full py-3 flex justify-center">
         <h2 className="text-[#A5B6D2] font-light">
-          © {currentYear} New Creation, All Rights Reserved.
+          © {currentYear} Digital Partners, All Rights Reserved.
         </h2>
       </div>
     </div>

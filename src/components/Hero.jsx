@@ -91,7 +91,7 @@ const Hero = () => {
           </div>
           {/* Diolog */}
           <div className="my-4">
-            <div className="inset-0 flex justify-left md:justify-center">
+            <div className="inset-0 flex md:justify-left justify-center">
               <button
                 type="button"
                 onClick={openModal}
@@ -126,7 +126,7 @@ const Hero = () => {
                       leaveFrom="opacity-100 scale-100"
                       leaveTo="opacity-0 scale-95"
                     >
-                      <Dialog.Panel className=" bg-red-900 flex justify-center transform  rounded-2xl  p-6 shadow-xl transition-all">
+                      <Dialog.Panel className=" bg-white flex justify-center transform  rounded-2xl  p-6 shadow-xl transition-all">
                         <div className="mt-2">
                           <ReactPlayer url="https://vimeo.com/839465389" controls />
                         </div>
