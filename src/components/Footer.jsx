@@ -43,7 +43,7 @@ const Footer = () => {
             <p className="text-white font-normal">
               Everything starts with identity...
             </p>
-            <div className="text-white">
+            <div className="text-white md:hidden block">
               <div className="flex gap-2 items-center cursor-pointer group">
                 <span>
                   <MdEmail />
