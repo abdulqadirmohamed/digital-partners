@@ -14,9 +14,9 @@ import img6 from "../img/services-img8.png";
 
 const Services = () => {
   const pricePlans = [
-    { id: 3, logo: img3, title: "E-Government" },
-    { id: 2, logo: img2, title: "Banking,Financial Services & Insurence " },
-    { id: 2, logo: img2, title: "Telecom & E-commerce" },
+    { id: 1, logo: img3, title: "E-Government" },
+    { id: 2, logo: img2, title: "Banking, Financial Services & Insurence" },
+    { id: 3, logo: img1, title: "Telecom & E-commerce" },
     { id: 4, logo: img4, title: "HR & Interim" },
 
     { id: 5, logo: img5, title: "Media & Entertainment" },

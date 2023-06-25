@@ -14,11 +14,10 @@ const Footer = () => {
   const navLinks = [
     { id: 1, url: "#services", title: "Services" },
     { id: 2, url: "#partners", title: "Partners" },
-    { id: 3, url: "#about", title: "About" }
+    { id: 3, url: "#about", title: "About" },
   ];
 
   const handleScroll = (e) => {
-
     e.preventDefault();
     // get the href and remove everything before the hash (#)
     const href = e.currentTarget.href;
@@ -31,7 +30,10 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r to-primary from-secondary via-[#5c10be]" id="contact">
+    <div
+      className="bg-gradient-to-r to-primary from-secondary via-[#5c10be]"
+      id="contact"
+    >
       <div className="md:w-[70%] w-[90%] mx-auto h-full mt-5 py-10">
         <div className="flex md:justify-between justify-center gap-4">
           <div className="flex flex-col justify-center gap-4">
@@ -41,6 +43,30 @@ const Footer = () => {
             <p className="text-white font-normal">
               Everything starts with identity...
             </p>
+            <div className="text-white">
+              <div className="flex gap-2 items-center cursor-pointer group">
+                <span>
+                  <MdEmail />
+                </span>
+                <Link
+                  href="mailto:sales@digitalpartner.tech"
+                  className="hover:underline "
+                >
+                  sales@digitalpartner.tech
+                </Link>
+              </div>
+              <div className="flex gap-2 items-center cursor-pointer group">
+                <span>
+                  <MdEmail />
+                </span>
+                <Link
+                  href="mailto:sales@digitalpartner.tech"
+                  className="hover:underline "
+                >
+                  info@digitalpartner.tech
+                </Link>
+              </div>
+            </div>
             <div className="flex md:justify-between justify-center gap-3">
               <span className="bg-[#242B44] hover:bg-primary text-darkWhite p-3 rounded-md cursor-pointer">
                 <FaFacebookF />
@@ -52,6 +78,7 @@ const Footer = () => {
                 <RiInstagramFill />
               </span>
             </div>
+           
           </div>
           <div className="md:block hidden">
             <h1 className="md:text-[24px] text-darkWhite font-bold my-2">
@@ -77,23 +104,22 @@ const Footer = () => {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                  <span >
-                    {nav.title}
-                  </span>
+                  <span>{nav.title}</span>
                 </Link>
               ))}
             </div>
           </div>
           <div className="md:block hidden text-white">
-            <h1 className="md:text-[24px] font-bold my-2">
-              Contact Info
-            </h1>
+            <h1 className="md:text-[24px] font-bold my-2">Contact Info</h1>
             <div>
               <div className="flex gap-2 items-center cursor-pointer group">
-                <span >
+                <span>
                   <MdEmail />
                 </span>
-                <Link href="mailto:sales@digitalpartner.tech" className="hover:underline ">
+                <Link
+                  href="mailto:sales@digitalpartner.tech"
+                  className="hover:underline "
+                >
                   sales@digitalpartner.tech
                 </Link>
               </div>
@@ -101,7 +127,10 @@ const Footer = () => {
                 <span>
                   <MdEmail />
                 </span>
-                <Link href="mailto:info@digitalpartner.tech" className="hover:underline ">
+                <Link
+                  href="mailto:info@digitalpartner.tech"
+                  className="hover:underline "
+                >
                   info@digitalpartner.tech
                 </Link>
               </div>
