@@ -29,8 +29,8 @@ export default function Home() {
 
         <WhatWeDo/>
         <MobileID/>
-        <DigiPost/>
-        <MoneyMe/>
+        {/* <DigiPost/>
+        <MoneyMe/> */}
 
         <Services/>
         {/* <Partners/> */}

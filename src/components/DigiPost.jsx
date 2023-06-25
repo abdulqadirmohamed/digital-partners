@@ -3,11 +3,15 @@ import img from "../img/whatwedo/digipost_left.png";
 
 const DigiPost = () => {
   return (
-    <div className="md:h-[450px] h-screen py-10 border-2 border-gray-100" id="about">
-      <div className="md:w-[70%] w-[90%] mx-auto grid grid-cols-3 items-center md:h-full">
+    <div className="md:h-[450px] h-[600px] py-10 p-4 bg-red-200" id="about">
+      <div className="md:w-[70%] w-[90%] mx-auto grid md:grid-cols-2 items-center md:h-full">
+        {/* Image */}
+        <div>
+          <Image src={img} alt="about-section-img1" className="w-[250px] mx-auto" />
+        </div>
         {/* Text */}
-        <div className="col-span-2">
-          <div className="flex flex-col gap-10 md:text-left text-center md:py-10">
+        <div className="">
+          <div className="flex flex-col gap-10 md:text-left text-center flex-wrap md:py-10">
             <h2 className="text-primary font-semibold md:text-[20px]">
               DIGIPOST
             </h2>
@@ -19,10 +23,7 @@ const DigiPost = () => {
             </p>
           </div>
         </div>
-        {/* Image */}
-        <div>
-          <Image src={img} alt="about-section-img1" />
-        </div>
+        
       </div>
     </div>
   );

@@ -60,7 +60,7 @@ const Guidelines = () => {
           {pricePlans.map((plan) => (
             <div
               key={plan.id}
-              className="bg-gradient-to-r to-primary from-secondary hover:border-[1px] border-[1px] border-secondary hover:border-secondary rounded-md p-16 cursor-pointer transition-all duration-200 ease-in-out"
+              className="bg-[#EFF6FF] rounded-md p-16 cursor-pointer transition-all duration-200 ease-in-out"
             >
               <Image src={plan.logo} alt="pricing plan icon" />
             </div>

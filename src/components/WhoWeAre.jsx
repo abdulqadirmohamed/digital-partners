@@ -42,7 +42,7 @@ const WhoWeAre = () => {
             Digital Partners is a leading provider of digital identity
             solutions.
           </h1>
-          <p className="text-lightBlack md:text-[20px] text-[18px] leading-[26px]">
+          <p className="text-black text-[22px] md:text-[20px] font-medium leading-[30px]">
             Our vision is to build technology for people to trust each other in
             a digital world. We bring trust to identity in every step of the
             customer journey from onboarding to off boarding. With us, safety

@@ -36,13 +36,13 @@ const Optimise = () => {
         <h1 className="text-[50px] text-primary font-bold leading-[56px] md:w-[600px] w-full text-center my-5">Optimise your customer journey</h1>
         <div className="flex gap-4 flex-wrap mt-4">
           {datas.map((data) => (
-            <div key={data.id} className="flex flex-col justify-center items-center px-2 py-3 bg-blue-50 md:w-[500px] ">
-              <div className="bg-gradient-to-r to-primary from-secondary text-white p-4 w-[80px] h-[80px] rounded-full flex justify-center items-center">
+            <div key={data.id} className="flex md:flex-col gap-4 justify-center items-center px-2 py-3 bg-blue-50 rounded-md md:w-[500px] ">
+              <div className="bg-gradient-to-r to-primary from-secondary text-white p-4 md:w-[80px] md:h-[80px] rounded-full flex justify-center items-center">
                 {data.icon}
               </div>
-              <div className="text-center mt-3 text-[22px] ">
+              <div className="md:text-center mt-3 md:text-[22px] text-[18px] ">
                 <h1 className="font-bold my-2">{data.title}</h1>
-                <p className="w-[50%] mx-auto leading-[29px]">{data.desc}</p>
+                <p className="md:w-[50%]  mx-auto leading-[29px]">{data.desc}</p>
               </div>
             </div>
           ))}

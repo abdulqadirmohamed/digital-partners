@@ -15,10 +15,11 @@ import img6 from "../img/services-img8.png";
 
 const Services = () => {
   const pricePlans = [
-    { id: 1, logo: img1, title: "Retail & E-commerce" },
-    { id: 2, logo: img2, title: "Finance" },
     { id: 3, logo: img3, title: "E-Government" },
+    { id: 2, logo: img2, title: "Banking,Financial Services & Insurence " },
+    { id: 2, logo: img2, title: "Telecom & E-commerce" },
     { id: 4, logo: img4, title: "HR & Interim" },
+
     { id: 5, logo: img5, title: "Media & Entertainment" },
     { id: 6, logo: img6, title: "Mobility, Travel & Hospitality" },
   ];
@@ -55,7 +56,7 @@ const Services = () => {
           <h1 className="md:text-[60px] text-[26px] text-primary font-bold leading-[56px]">
             Digital Identity
           </h1>
-          <p className="md:text-[18px] text-[16px] text-gray-800 leading-[26px] font-light my-4 mt-5">
+          <p className="text-black text-[22px] md:text-[20px] font-medium leading-[30px] text-center">
             If you use MobileID, you can feel confident with our handling of
             your identity. And companies, authorities and organisations can
             calmly develop their services knowing that they have chosen a safe
@@ -72,7 +73,7 @@ const Services = () => {
               className="bg-gradient-to-r to-primary from-secondary hover:bg-gradient-to-bl hover:from-primary hover:to-secondary rounded-md p-16 flex flex-col items-center cursor-pointer transition-all duration-300 ease"
             >
               <Image src={plan.logo} alt="pricing plan icon" />
-              <h1 className="text-[24px] text-darkWhite">{plan.title}</h1>
+              <h1 className="text-[24px] text-darkWhite text-center">{plan.title}</h1>
             </div>
           ))}
         </motion.div>

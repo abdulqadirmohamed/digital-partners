@@ -32,7 +32,7 @@ const Hero = () => {
 
   const heroStyle = {
     backgroundImage:
-      'https://www.flickr.com/photos/197122939@N08/52997327757/in/dateposted/',
+      "https://www.flickr.com/photos/197122939@N08/52997327757/in/dateposted/",
     backgroundPosition: "center",
     backgroundSize: "cover",
     // backgroundRepeat: 'no repeat',
@@ -50,7 +50,7 @@ const Hero = () => {
       >
         <div>
           {/* social media icon */}
-          <div className="hidden md:flex flex-col justify-center gap-3 absolute bottom-24 left-32 ">
+          <div className="hidden md:flex flex-col justify-center items-center gap-3 absolute bottom-24 left-32 ">
             <span className="bg-gradient-to-r to-primary from-secondary text-white p-3 rounded-md cursor-pointer">
               <FaFacebookF />
             </span>

@@ -33,22 +33,20 @@ const About = () => {
   });
 
   const lists = [
-    { id: 1, title: "Mobile Money" },
-    { id: 2, title: "Content Delivery Network" },
+    { id: 1, title: "MobileID" },
     { id: 3, title: "Security Management" },
+    { id: 9, title: "Mobile Money" },
+    { id: 2, title: "Content Delivery Network" },
+    { id: 7, title: "Digital Post" },
     { id: 4, title: "SIEM Threat Detection" },
     { id: 5, title: "Cloud Security" },
     { id: 6, title: "Cyber Security" },
-    { id: 7, title: "Digital Post" },
     { id: 8, title: "Server Security" },
   ];
   const handleScroll = (e) => {
-    // first prevent the default behavior
     e.preventDefault();
-    // get the href and remove everything before the hash (#)
     const href = e.currentTarget.href;
     const targetId = href.replace(/.*\#/, "");
-    // get the element by id and use scrollIntoView
     const elem = document.getElementById(targetId);
     elem?.scrollIntoView({
       behavior: "smooth",
@@ -84,7 +82,7 @@ const About = () => {
             At Digital Partners we start at the grassroot to build our solutions for
             identity.
           </p>
-          <div className="grid md:grid-cols-2 my-4">
+          <div className="grid grid-cols-2 my-4 mx-auto">
             {lists.map((list) => (
               <div className="flex gap-2 text-lg items-center" key={list.id}>
                 <BsFillArrowRightCircleFill className="text-secondary" />
