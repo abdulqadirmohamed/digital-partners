@@ -126,9 +126,9 @@ const Hero = () => {
                       leaveFrom="opacity-100 scale-100"
                       leaveTo="opacity-0 scale-95"
                     >
-                      <Dialog.Panel className="max-w-lg	 bg-white flex justify-center transform  rounded-2xl  p-6 shadow-xl transition-all">
+                      <Dialog.Panel className="	 md:bg-white bg-transparent flex justify-center transform  rounded-2xl  p-6 shadow-xl transition-all">
                         <div className="mt-2 ">
-                          <ReactPlayer url="https://vimeo.com/839465389" controls />
+                          <ReactPlayer url="https://vimeo.com/839465389" controls className="md:p-0 p-16" />
                         </div>
 
                       </Dialog.Panel>
