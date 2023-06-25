@@ -65,7 +65,7 @@ const Hero = () => {
           <div className="col-span-1 z-48">
             <motion.h1
               animate={animation}
-              className="text-white md:text-[70px] text-[37px] font-bold md:leading-[70px] leading-[40px] md:text-left text-center"
+              className="text-white md:text-[70px] mt-16 text-[37px] font-bold md:leading-[70px] leading-[40px] md:text-left text-center"
             >
               Everything Starts{" "}
               <span className="animate-text bg-gradient-to-r from-[#2D76E7] to-[#802FD7] via-[#511b64] bg-clip-text text-transparent">

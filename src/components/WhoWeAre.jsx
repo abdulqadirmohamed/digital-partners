@@ -36,7 +36,7 @@ const WhoWeAre = () => {
         ref={ref}
         className="md:w-[70%] w-[90%] mx-auto grid md:grid-cols-2 items-center gap-6"
       >
-        <div className="flex flex-col gap-6 md:text-left text-center">
+        <div className="flex flex-col gap-6 md:text-left ">
           <h2 className="text-secondary">WHO WE ARE</h2>
           <h1 className="md:text-[60px] text-[26px] text-primary font-bold md:leading-[70px] leading-[32px]">
             Digital Partners is a leading provider of digital identity

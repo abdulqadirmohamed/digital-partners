@@ -41,8 +41,6 @@ const Guidelines = () => {
   });
 
   return (
-    // <div className="bg-primary md:h-[650px] h-screen">
-    //   <div className="md:w-[70%] w-[90%]  mx-auto flex flex-col justify-center items-center md:h-full h-screen">
     <div className="py-10" id="guidlines">
       <div
       ref={ref}
@@ -50,19 +48,19 @@ const Guidelines = () => {
       >
         <div className="text-center">
           <h2 className="text-secondary">WE FOLLOW THESE</h2>
-          <h1 className="text-[60px] text-primary font-bold leading-[56px]">
+          <h1 className="md:text-[60px] text-[30px] text-primary font-bold md:leading-[70px] leading-[32px]">
             Guidelines
           </h1>
         </div>
         <motion.div 
         animate={animation}
-        className="grid md:grid-cols-4 gap-6 mt-16">
+        className="grid grid-cols-4 md:gap-6 gap-4 md:mt-16 mt-8">
           {pricePlans.map((plan) => (
             <div
               key={plan.id}
-              className="bg-[#EFF6FF] rounded-md p-16 cursor-pointer transition-all duration-200 ease-in-out"
+              className="bg-gray-100 p-4 md:p-10 rounded-full md:rounded-md cursor-pointer transition-all duration-200 ease-in-out"
             >
-              <Image src={plan.logo} alt="pricing plan icon" />
+              <Image src={plan.logo} alt="pricing plan icon" className="md:w-full w-[50px]" />
             </div>
           ))}
         </motion.div>

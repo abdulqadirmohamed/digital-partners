@@ -64,7 +64,7 @@ const About = () => {
         {/* Image */}
         <motion.div
           animate={animation}
-          className="grid grid-cols-2 gap-3 items-end "
+          className="grid grid-cols-2 gap-3 items-end mx-auto"
         >
           <Image src={img1} alt="about-section-img1" />
           <Image src={img2} alt="about-section-img2" />
