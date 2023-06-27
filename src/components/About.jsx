@@ -59,11 +59,11 @@ const About = () => {
             At Digital Partners we start at the grassroot to build our solutions for
             identity.
           </p>
-          <div className="grid grid-cols-2 my-4 mx-auto">
+          <div className="grid md:grid-cols-2 my-4 mx-auto">
             {lists.map((list) => (
               <div className="flex gap-2 text-lg items-center" key={list.id}>
                 <BsFillArrowRightCircleFill className="text-secondary" />
-                <h2 className="text-lightBlack md:text-[18px] text-[15px]">
+                <h2 className="text-lightBlack md:text-[18px] text-[15px] list-outside">
                   {list.title}
                 </h2>
               </div>
