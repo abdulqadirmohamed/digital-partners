@@ -11,14 +11,15 @@ const About = () => {
 
   const lists = [
     { id: 1, title: "MobileID" },
-    { id: 3, title: "Security Management" },
-    { id: 9, title: "Mobile Money" },
-    { id: 2, title: "Content Delivery Network" },
-    { id: 7, title: "Digital Post" },
-    { id: 4, title: "SIEM Threat Detection" },
-    { id: 5, title: "Cloud Security" },
-    { id: 6, title: "Cyber Security" },
-    { id: 8, title: "Server Security" },
+    { id: 2, title: "Security Management" },
+    { id: 10, title: "BankID" },
+    { id: 4, title: "Content Delivery Network" },
+    { id: 3, title: "Mobile Money" },
+    { id: 5, title: "Digital Post" },
+    { id: 6, title: "SIEM Threat Detection" },
+    { id: 7, title: "Cloud Security" },
+    { id: 8, title: "Cyber Security" },
+    { id: 9, title: "Server Security" },
   ];
   const handleScroll = (e) => {
     e.preventDefault();
