@@ -21,7 +21,7 @@ const WhatWeDo = () => {
                 The Perfect Solution For all
               </h1>
             </div>
-            <div className="grid md:grid-cols-3 justify-center">
+            <div className="sm:grid md:grid-cols-3 hidden justify-center">
               <Image src={img3} alt="about-section-img1" />
               <Image src={img2} alt="about-section-img1" />
               <Image src={img4} alt="about-section-img1" />

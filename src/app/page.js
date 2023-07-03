@@ -18,22 +18,22 @@ export default function Home() {
     <main className="bg-white w-full h-full">
       <div id="home">
         <Header />
-        <Hero/>
-        <Optimise/>
-        <WhoWeAre/>
-        <About/>
-        <Mission/>
-        <Guidelines/>
+        <Hero />
+        <Optimise />
+        <WhoWeAre />
+        <About />
+        <Mission />
+        <Guidelines />
 
-        <WhatWeDo/>
-        <WhatWeDoList/>
+        <hr />
+        <WhatWeDo />
+        <WhatWeDoList />
+        <hr />
 
-    
-
-        <Services/>
+        <Services />
         {/* <Partners/> */}
-        <WorldMap/>
-        <Footer/>
+        <WorldMap />
+        <Footer />
       </div>
     </main>
   );

@@ -29,7 +29,7 @@ const Services = () => {
        
         className="xl:w-[80%] md:w-[90%] w-[90%] mx-auto flex flex-col justify-center items-center h-full"
       >
-        <div className="md:text-center">
+        <div className="text-center">
           <h2 className="text-secondary">OUR SERVICES</h2>
           <h1 className="md:text-[60px] text-[26px] text-primary font-bold leading-[56px]">
             Digital Identity
