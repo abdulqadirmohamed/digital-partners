@@ -32,17 +32,17 @@ const Optimise = () => {
   ];
   return (
     <div className="my-3">
-      <div className="md:w-[60%] w-[90%] mx-auto flex flex-col items-center">
+      <div className="lg:w-[70%]  w-[90%] mx-auto flex flex-col items-center">
         <h1 className="md:text-[60px] text-[26px] text-primary font-bold md:leading-[70px] leading-[32px] text-center">Optimise your customer journey</h1>
-        <div className="flex gap-4 flex-wrap mt-4">
+        <div className="grid lg:grid-cols-2 md-grid-cols-2 gap-4 mt-4">
           {datas.map((data) => (
-            <div key={data.id} className="flex md:flex-col gap-4 justify-center items-center px-2 py-3 bg-blue-50 rounded-md md:w-[500px] ">
+            <div key={data.id} className="flex md:flex-col gap-4 justify-center items-center px-2 py-3 bg-blue-50 rounded-md">
               <div className="bg-gradient-to-r to-primary from-secondary text-white p-4 md:w-[80px] md:h-[80px] rounded-full flex justify-center items-center">
                 {data.icon}
               </div>
-              <div className="md:text-center mt-3 md:text-[22px] text-[18px] ">
+              <div className="md:text-center md:mt-3 md:text-[22px] text-[18px] ">
                 <h1 className="font-bold my-2">{data.title}</h1>
-                <p className="md:w-[50%]  mx-auto leading-[29px]">{data.desc}</p>
+                <p className="md:w-[80%] mx-auto leading-[29px]">{data.desc}</p>
               </div>
             </div>
           ))}

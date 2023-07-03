@@ -5,7 +5,7 @@ import img3 from "../img/whatwedo/money_me_left.png";
 
 
 
-const MobileID = () => {
+const WhatWeDoList = () => {
   const datas = [
     {
       id: 1,
@@ -30,9 +30,9 @@ const MobileID = () => {
   ];
 
   return (
-    <div className="py-10 p-4" id="about">
+    <div className=" py-10 sm:p-4" id="about">
       {datas.map((data)=>(
-      <div key={data.id} className="md:w-[70%] w-[95%] mx-auto grid md:grid-cols-2 items-center md:h-full">
+      <div key={data.id} className="xl:w-[70%] md:w-[90%] w-[90%] mx-auto grid sm:grid-cols-2 items-center">
         {/* Image */}
         <div className="">
           <Image
@@ -42,7 +42,7 @@ const MobileID = () => {
           />
         </div>
         {/* Text */}
-        <div className="flex flex-col gap-3  md:text-center text-left py-10">
+        <div className="flex flex-col gap-3 text-left sm:py-10">
           <h2 className="text-secondary font-bold text-[20px]">{data.title}</h2>
           <p className="text-black text-[22px] md:text-[20px] font-medium leading-[30px]">
             {data.desc}
@@ -55,4 +55,5 @@ const MobileID = () => {
   );
 };
 
-export default MobileID;
+// xl:bg-purple-400 lg:bg-blue-300 md:bg-amber-300 sm:bg-green-200 bg-red-300
+export default WhatWeDoList;

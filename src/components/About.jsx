@@ -8,7 +8,6 @@ import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import Link from "next/link";
 
 const About = () => {
-
   const lists = [
     { id: 1, title: "MobileID" },
     { id: 2, title: "Security Management" },
@@ -31,40 +30,29 @@ const About = () => {
     });
   };
   return (
-    <div
-      className="shadow-sm md:h-[900px] h-full py-10"
-      id="about"
-    >
-      <div
-
-        className="md:w-[70%] w-[90%] mx-auto grid md:grid-cols-2 items-center h-full"
-      >
+    <div className="h-full  py-10" id="about">
+      <div className="xl:w-[70%] md:w-[90%] w-[90%]  mx-auto grid lg:grid-cols-2 md:grid-cols-1 items-center h-full">
         {/* Image */}
-        <div
-
-          className="grid grid-cols-2 gap-3 items-end "
-        >
+        <div className="grid grid-cols-2 gap-3 items-end ">
           <Image src={img1} alt="about-section-img1" />
           <Image src={img2} alt="about-section-img2" />
           <Image src={img3} alt="about-section-img3" />
         </div>
         {/* Text */}
-        <div
-
-          className="flex flex-col gap-2 md:text-left text-center py-10">
+        <div className="flex flex-col gap-2 md:text-left text-center py-10">
           <h2 className="text-secondary">ABOUT US</h2>
-          <h1 className="md:text-[60px] text-[26px] text-primary font-bold md:leading-[70px] leading-[32px]">
+          <h1 className="xl:text-[60px] md:text-[40px] text-[26px] text-primary font-bold xl:leading-[70px] md:leading-[55px] leading-[32px]">
             Everything starts with identity
           </h1>
           <p className="text-lightBlack text-[18px] md:text-[20px]  leading-[26px]">
-            At Digital Partners we start at the grassroot to build our solutions for
-            identity.
+            At Digital Partners we start at the grassroot to build our solutions
+            for identity.
           </p>
-          <div className="grid md:grid-cols-2 my-4 mx-auto">
+          <div className="grid sm:grid-cols-2 my-4 md:mx-0 mx-auto">
             {lists.map((list) => (
               <div className="flex gap-2 text-lg items-center" key={list.id}>
                 <BsFillArrowRightCircleFill className="text-secondary" />
-                <h2 className="text-lightBlack md:text-[18px] text-[15px] list-outside">
+                <h2 className="text-lightBlack text-[18px] list-outside">
                   {list.title}
                 </h2>
               </div>

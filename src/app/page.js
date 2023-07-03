@@ -1,12 +1,10 @@
 import About from "@/components/About";
-import DigiPost from "@/components/DigiPost";
 import Footer from "@/components/Footer";
 import Guidelines from "@/components/Guidelines";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Mission from "@/components/Mission";
-import MobileID from "@/components/MobileID";
-import MoneyMe from "@/components/MoneyMe";
+import WhatWeDoList from "@/components/WhatWeDoList";
 import Optimise from "@/components/Optimise";
 import Partners from "@/components/Partners";
 import Services from "@/components/Services";
@@ -28,9 +26,9 @@ export default function Home() {
         <Guidelines/>
 
         <WhatWeDo/>
-        <MobileID/>
-        {/* <DigiPost/>
-        <MoneyMe/> */}
+        <WhatWeDoList/>
+
+    
 
         <Services/>
         {/* <Partners/> */}

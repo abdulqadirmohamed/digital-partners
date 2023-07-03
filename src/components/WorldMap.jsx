@@ -5,8 +5,8 @@ import Image from 'next/image';
 
 const WorldMap = () => {
     return (
-        <div className="md:h-[650px] h-[450px]">
-            <div className="md:w-[70%] w-[90%] mx-auto flex justify-center items-center h-full">
+        <div className="lg:h-[600px] h-[400px]">
+            <div className="xl:w-[70%] md:w-[90%] w-[90%] mx-auto flex justify-center items-center h-full">
                 <Image  src={mapWorld} alt="map-website" className='w-full' />
             </div>
         </div>

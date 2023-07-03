@@ -56,16 +56,16 @@ const Hero = () => {
   };
   return (
     <motion.div
-      className="h-[650px] w-full mx-auto relative bg-gradient-to-r from-[#1A2037] to-black"
+      className="h-[650px] w-full mx-auto relative bg-gradient-to-r from-[#1A2037] to-black overflow-hidden"
       style={heroStyle}
     >
       <div
         ref={ref}
-        className="md:w-[70%] w-[90%] mx-auto grid md:grid-cols-2  items-center"
+        className="md:w-[70%] w-[90%] mx-auto grid lg:grid-cols-2  items-center"
       >
         <div>
           {/* social media icon */}
-          <div className="hidden md:flex flex-col justify-center items-center gap-3 absolute bottom-24 left-32 ">
+          <div className="hidden lg:flex flex-col justify-center items-center gap-3 absolute bottom-24 left-32 ">
             <span className="bg-gradient-to-r to-primary from-secondary text-white p-3 rounded-md cursor-pointer">
               <FaFacebookF />
             </span>
@@ -77,7 +77,7 @@ const Hero = () => {
             </span>
           </div>
           {/* Text */}
-          <div className="col-span-1 z-48">
+          <div className="col-span-1">
             <motion.h1
               animate={animation}
               className="text-white md:text-[70px] md:t-0 mt-16 text-[37px] font-bold md:leading-[70px] leading-[40px] md:text-left text-center"
