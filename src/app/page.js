@@ -6,12 +6,10 @@ import Hero from "@/components/Hero";
 import Mission from "@/components/Mission";
 import WhatWeDoList from "@/components/WhatWeDoList";
 import Optimise from "@/components/Optimise";
-import Partners from "@/components/Partners";
 import Services from "@/components/Services";
 import WhatWeDo from "@/components/WhatWeDo";
 import WhoWeAre from "@/components/WhoWeAre";
 import WorldMap from "@/components/WorldMap";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -31,7 +29,6 @@ export default function Home() {
         <hr />
 
         <Services />
-        {/* <Partners/> */}
         <WorldMap />
         <Footer />
       </div>

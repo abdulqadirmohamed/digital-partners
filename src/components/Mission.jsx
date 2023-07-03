@@ -22,7 +22,7 @@ const Mission = () => {
           </p>
         </div>
         {/* Image */}
-        <div className="">
+        <div className="flex lg:justify-end justify-center">
           <Image src={img} className="" alt="about-section-img1" />
         </div>
       </div>

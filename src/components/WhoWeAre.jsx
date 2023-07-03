@@ -28,7 +28,7 @@ const WhoWeAre = () => {
           </p>
         </div>
 
-        <div >
+        <div className="flex lg:justify-end justify-center">
           <Image src={img} alt="Who we are" />
         </div>
       </div>

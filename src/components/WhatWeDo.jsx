@@ -7,7 +7,7 @@ import img4 from "../img/whatwedo/money_me.png";
 
 const WhatWeDo = () => {
   return (
-    <div className="h-full md:h-[700px]  flex justify-center items-center">
+    <div className="h-full md:h-[500px]  flex justify-center items-center">
       <div className="xl:w-[70%] md:w-[90%] w-[90%] grid lg:grid-cols-4 md:grid-cols-1 items-center h-full">
         <div className="flex justify-center">
           <Image src={img1} alt="about-section-img1" />
