@@ -42,7 +42,7 @@ const WhatWeDoList = () => {
           />
         </div>
         {/* Text */}
-        <div className="flex flex-col gap-3 sm:text-left text-center sm:py-10">
+        <div className="flex flex-col gap-3 text-left sm:py-10">
           <h2 className="text-secondary font-bold text-[20px]">{data.title}</h2>
           <p className="text-black text-[22px] md:text-[20px] font-medium leading-[30px]">
             {data.desc}

@@ -11,7 +11,7 @@ const Mission = () => {
     <div className="bg-gradient-to-r to-black from-slate-800 shadow-sm md:h-[700px] h-full py-10 relative" id="about">
       <div className="xl:w-[70%] md:w-[90%] w-[90%] mx-auto grid md:grid-cols-2 items-center h-full">
         {/* Text */}
-        <div className="flex flex-col gap-2 md:text-left text-center py-10">
+        <div className="flex flex-col gap-2 text-left py-10">
           <h1 className="md:text-[60px] text-[26px] text-white font-bold md:leading-[70px] leading-[32px]">
             For the next generation of digital life
           </h1>

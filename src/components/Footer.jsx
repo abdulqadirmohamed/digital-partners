@@ -49,10 +49,10 @@ const Footer = () => {
                   <MdEmail />
                 </span>
                 <Link
-                  href="mailto:sales@digitalpartner.tech"
+                  href="mailto:sales@digitalpartners.tech"
                   className="hover:underline "
                 >
-                  sales@digitalpartner.tech
+                  sales@digitalpartners.tech
                 </Link>
               </div>
               <div className="flex gap-2 items-center cursor-pointer group">
@@ -60,10 +60,10 @@ const Footer = () => {
                   <MdEmail />
                 </span>
                 <Link
-                  href="mailto:sales@digitalpartner.tech"
+                  href="mailto:sales@digitalpartners.tech"
                   className="hover:underline "
                 >
-                  info@digitalpartner.tech
+                  info@digitalpartners.tech
                 </Link>
               </div>
             </div>
@@ -117,10 +117,10 @@ const Footer = () => {
                   <MdEmail />
                 </span>
                 <Link
-                  href="mailto:sales@digitalpartner.tech"
+                  href="mailto:sales@digitalpartners.tech"
                   className="hover:underline "
                 >
-                  sales@digitalpartner.tech
+                  sales@digitalpartners.tech
                 </Link>
               </div>
               <div className="flex gap-2 items-center cursor-pointer group">
@@ -128,10 +128,10 @@ const Footer = () => {
                   <MdEmail />
                 </span>
                 <Link
-                  href="mailto:info@digitalpartner.tech"
+                  href="mailto:info@digitalpartners.tech"
                   className="hover:underline "
                 >
-                  info@digitalpartner.tech
+                  info@digitalpartners.tech
                 </Link>
               </div>
             </div>

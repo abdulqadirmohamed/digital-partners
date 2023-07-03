@@ -12,7 +12,7 @@ const WhoWeAre = () => {
       <div
         className="xl:w-[70%] md:w-[90%] w-[90%] mx-auto grid lg:grid-cols-2 md:grid-cols-1 items-center gap-6"
       >
-        <div className="flex flex-col gap-6 md:text-left text-center">
+        <div className="flex flex-col gap-6 text-left">
           <h2 className="text-secondary">WHO WE ARE</h2>
           <h1 className="xl:text-[60px] md:text-[40px] text-[26px] xl:leading-[70px] md:leading-[55px] leading-[32px] text-primary font-bold">
             Digital Partners is a leading provider of digital identity

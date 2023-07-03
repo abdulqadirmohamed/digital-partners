@@ -41,7 +41,7 @@ const About = () => {
           </div>
         </div>
         {/* Text */}
-        <div className="flex flex-col gap-2 md:text-left text-center py-10">
+        <div className="flex flex-col gap-2 text-left py-10">
           <h2 className="text-secondary">ABOUT US</h2>
           <h1 className="xl:text-[60px] md:text-[40px] text-[26px] text-primary font-bold xl:leading-[70px] md:leading-[55px] leading-[32px]">
             Everything starts with identity
@@ -50,7 +50,7 @@ const About = () => {
             At Digital Partners we start at the grassroot to build our solutions
             for identity.
           </p>
-          <div className="grid sm:grid-cols-2 my-4 md:mx-0 mx-auto">
+          <div className="grid sm:grid-cols-2 my-4 md:mx-0 ">
             {lists.map((list) => (
               <div className="flex gap-2 text-lg items-center" key={list.id}>
                 <BsFillArrowRightCircleFill className="text-secondary" />
