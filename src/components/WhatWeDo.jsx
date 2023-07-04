@@ -15,7 +15,7 @@ const WhatWeDo = () => {
 
         <div className="col-span-3">
           <div className="flex flex-col items-center gap-2">
-            <div className="text-center">
+            <div className="text-left">
               <h2 className="text-secondary">WHAT WE DO</h2>
               <h1 className="xl:text-[60px] md:text-[40px] text-[26px] text-primary font-bold xl:leading-[70px] md:leading-[55px] leading-[32px]">
                 The Perfect Solution For all

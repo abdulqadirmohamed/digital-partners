@@ -143,8 +143,9 @@ const Footer = () => {
       <hr className="h-px  bg-gray-200 border-0 dark:bg-gray-700" />
       <div className="divide"></div>
       <div className="md:w-[70%] w-[90%] mx-auto h-full py-3 flex justify-center">
-        <h2 className="text-[#A5B6D2] font-light">
-          © {currentYear} Digital Partners, All Rights Reserved.
+        <h2 className="text-[#A5B6D2] font-light text-center">
+          © {currentYear} Digital Partners, All Rights Reserved. 
+          Developed by<Link className="hover:underline hover:text-white transition duration-300 ease" href="https://doogdigital.com/" target="_blank"> Doog Digital</Link>
         </h2>
       </div>
     </div>

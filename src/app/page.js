@@ -19,6 +19,7 @@ export default function Home() {
         <Hero />
         <Optimise />
         <WhoWeAre />
+        <hr/>
         <About />
         <Mission />
         <Guidelines />
