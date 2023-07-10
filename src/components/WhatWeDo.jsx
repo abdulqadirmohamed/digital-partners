@@ -8,12 +8,12 @@ import img4 from "../img/whatwedo/money_me.png";
 const WhatWeDo = () => {
   return (
     <div className=" h-full md:h-full  flex justify-center items-center">
-      <div className="xl:w-[70%] md:w-[90%] w-[90%] grid lg:grid-cols-4 md:grid-cols-1 items-center h-full">
-        <div className="flex justify-center">
+      <div className="xl:w-[70%] md:w-[90%] w-[90%] ">
+        <div className="flex justify-center items-center">
           <Image src={img1} alt="about-section-img1" />
         </div>
 
-        <div className="col-span-3">
+        {/* <div className="col-span-3">
           <div className="flex flex-col items-center gap-2">
             <div className="text-left">
               <h2 className="text-secondary">WHAT WE DO</h2>
@@ -27,7 +27,7 @@ const WhatWeDo = () => {
               <Image src={img4} alt="about-section-img1" />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

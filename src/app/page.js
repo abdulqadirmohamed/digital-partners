@@ -26,9 +26,9 @@ export default function Home() {
         <Guidelines />
 
         <hr />
-        {/* <WhatWeDo />
-        <WhatWeDoList /> */}
-        <hr />
+        <WhatWeDo />
+        {/* <WhatWeDoList /> */}
+       
 
         <Products/>
 
