@@ -10,6 +10,7 @@ import Services from "@/components/Services";
 import WhatWeDo from "@/components/WhatWeDo";
 import WhoWeAre from "@/components/WhoWeAre";
 import WorldMap from "@/components/WorldMap";
+import Products from "@/components/Products";
 
 export default function Home() {
   return (
@@ -25,9 +26,11 @@ export default function Home() {
         <Guidelines />
 
         <hr />
-        <WhatWeDo />
-        <WhatWeDoList />
+        {/* <WhatWeDo />
+        <WhatWeDoList /> */}
         <hr />
+
+        <Products/>
 
         <Services />
         <WorldMap />
