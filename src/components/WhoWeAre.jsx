@@ -24,7 +24,7 @@ const WhoWeAre = () => {
             customer journey from onboarding to off boarding. With us, safety
             and security always come first. We do not share any data with anyone
             else. Our top priority is to keep MobileID as safe and reliable as
-            it has always been.
+            it has always been
           </p>
         </div>
 
