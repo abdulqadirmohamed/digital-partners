@@ -10,7 +10,7 @@ const Products = () => {
       id: 1,
       subTitle: "Products",
       title: "Authentication",
-      desc: "Sign in to your site or app with electronic identities (eIDs)",
+      desc: "Sign in to your site or app with electronic identities (MobileID)",
       icon: authentication,
     },
     {
