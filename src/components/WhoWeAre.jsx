@@ -16,7 +16,7 @@ const WhoWeAre = () => {
           <h2 className="text-secondary">WHO WE ARE</h2>
           <h1 className="xl:text-[60px] md:text-[40px] text-[26px] xl:leading-[70px] md:leading-[55px] leading-[32px] text-primary font-bold">
             Digital Partners is a leading provider of digital identity
-            solutions.
+            solutions
           </h1>
           <p className="text-black text-[22px] md:text-[20px] font-medium leading-[30px]">
             Our vision is to build technology for people to trust each other in
@@ -24,7 +24,7 @@ const WhoWeAre = () => {
             customer journey from onboarding to off boarding. With us, safety
             and security always come first. We do not share any data with anyone
             else. Our top priority is to keep MobileID as safe and reliable as
-            it has always been
+            it has always been.
           </p>
         </div>
 

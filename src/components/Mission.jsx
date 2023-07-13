@@ -18,7 +18,7 @@ const Mission = () => {
           <p className="text-white text-[18px] md:text-[20px]  leading-[26px]">
             At Digital Partner, our mission is to create technology solutions for people to
             take full advantage of the digital world, safely, privately, and
-            confidently – so together, we can build a better tomorrow.
+            confidently – so together, we can build a better tomorrow
           </p>
         </div>
         {/* Image */}

@@ -39,7 +39,7 @@ const Products = () => {
                 <p className="my-4">{data.desc}</p>
               </div>
                
-                <div className=""><Image height={250} src={data.icon}/></div>
+                <div className="w-[250px]"><Image  src={data.icon}/></div>
             </div>
           ))}
         </div>
