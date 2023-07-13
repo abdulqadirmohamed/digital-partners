@@ -44,17 +44,7 @@ const Footer = () => {
               Everything starts with identity...
             </p>
             <div className="text-white md:hidden block">
-              <div className="flex gap-2 items-center cursor-pointer group">
-                <span>
-                  <MdEmail />
-                </span>
-                <Link
-                  href="mailto:sales@digitalpartners.tech"
-                  className="hover:underline "
-                >
-                  sales@digitalpartners.tech
-                </Link>
-              </div>
+              
               <div className="flex gap-2 items-center cursor-pointer group">
                 <span>
                   <MdEmail />
@@ -112,17 +102,6 @@ const Footer = () => {
           <div className="md:block hidden text-white">
             <h1 className="md:text-[24px] font-bold my-2">Contact Info</h1>
             <div>
-              <div className="flex gap-2 items-center cursor-pointer group">
-                <span>
-                  <MdEmail />
-                </span>
-                <Link
-                  href="mailto:sales@digitalpartners.tech"
-                  className="hover:underline "
-                >
-                  sales@digitalpartners.tech
-                </Link>
-              </div>
               <div className="flex gap-2 items-center cursor-pointer group">
                 <span>
                   <MdEmail />
