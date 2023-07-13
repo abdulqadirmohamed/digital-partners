@@ -23,7 +23,7 @@ const Products = () => {
   ];
   return (
     <div className="my-3">
-      <div className="lg:w-[70%]  w-[90%] mx-auto flex flex-col items-center">
+      <div className="lg:w-[70%]  w-[90%] mx-auto flex flex-col items-center" id="products">
         <h1 className="md:text-[60px] text-[26px] text-primary font-bold md:leading-[70px] leading-[32px] text-center my-3">
           Products
         </h1>

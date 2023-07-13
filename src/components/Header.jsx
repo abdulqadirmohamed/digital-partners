@@ -15,8 +15,9 @@ const Header = () => {
   const navLinks = [
     { id: 1, url: "#home", title: "Home", active:true},
     { id: 2, url: "#about", title: "About", active:false },
-    { id: 3, url: "#services", title: "Services", active:false },
-    { id: 4, url: "#contact", title: "Contact", active:false },
+    { id: 4, url: "#products", title: "Products", active:false },
+    { id: 3, url: "#solutions", title: "Solutions", active:false },
+    { id: 5, url: "#contact", title: "Contact", active:false },
   ];
 
   const handleScroll = (e) => {

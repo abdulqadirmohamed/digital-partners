@@ -12,8 +12,8 @@ import Link from "next/link";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const navLinks = [
-    { id: 1, url: "#services", title: "Services" },
-    { id: 2, url: "#partners", title: "Partners" },
+    { id: 1, url: "#solutions", title: "Solutions" },
+    { id: 2, url: "#products", title: "Products" },
     { id: 3, url: "#about", title: "About" },
   ];
 

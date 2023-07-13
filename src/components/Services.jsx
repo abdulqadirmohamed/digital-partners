@@ -24,7 +24,7 @@ const Services = () => {
 
  
   return (
-    <div className="py-10" id="services">
+    <div className="py-10" id="solutions">
       <div
        
         className="xl:w-[80%] md:w-[90%] w-[90%] mx-auto flex flex-col justify-center items-center h-full"
