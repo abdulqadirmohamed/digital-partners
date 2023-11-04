@@ -11,14 +11,14 @@ const Products = () => {
       subTitle: "Products",
       title: "Authentication",
       desc: "Sign in to your site or app with electronic identities (MobileID)",
-      icon: authentication,
+      icon: signatures,
     },
     {
       id: 2,
       subTitle: "Products",
       title: "Digital Signatures",
       desc: "Sign documents with legally binding electronic signatures",
-      icon: signatures,
+      icon: authentication,
     },
   ];
   return (
@@ -39,7 +39,7 @@ const Products = () => {
                 <p className="my-4">{data.desc}</p>
               </div>
                
-                <div><Image height={200} src={data.icon}/></div>
+                <div><Image height={200} width={200} src={data.icon}/></div>
             </div>
           ))}
         </div>
