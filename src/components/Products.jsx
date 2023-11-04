@@ -1,6 +1,6 @@
 import React from "react";
-import signatures from "../img/signatures.svg";
-import authentication from "../img/authentication.svg";
+import signatures from "../img/nexi-icon-identification.svg";
+import authentication from "../img/nexi-icon-signing.svg";
 import Image from "next/image";
 
 
@@ -39,7 +39,7 @@ const Products = () => {
                 <p className="my-4">{data.desc}</p>
               </div>
                
-                <div><Image height={250} src={data.icon}/></div>
+                <div><Image height={200} src={data.icon}/></div>
             </div>
           ))}
         </div>
