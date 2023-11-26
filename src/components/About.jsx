@@ -11,7 +11,6 @@ const About = () => {
   const lists = [
     { id: 1, title: "MobileID" },
     { id: 2, title: "Security Management" },
-    { id: 10, title: "BankID" },
     { id: 4, title: "Content Delivery Network" },
     { id: 3, title: "Mobile Money" },
     { id: 5, title: "Digital Post" },
