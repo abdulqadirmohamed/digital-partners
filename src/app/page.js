@@ -22,7 +22,7 @@ export default function Home() {
         <WhoWeAre />
         <hr/>
         <About />
-        <Mission />
+        {/* <Mission /> */}
         <Guidelines />
 
         <hr />
